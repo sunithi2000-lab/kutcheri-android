@@ -64,6 +64,11 @@ jobs:
       - name: Build app page
         run: $RUN "Build app page" bash -c 'python3 tools/build_www.py && node --check tools/_check.js'
 
+      - name: Test the app page (headless Chrome, phone size)
+        run: |
+          pip install --quiet playwright && python3 -m playwright install --with-deps chromium > /dev/null
+          $RUN "page tests" python3 tests/check_page.py www/index.html
+
       - name: Install Capacitor
         run: $RUN "npm install" npm install --no-audit --no-fund
 
@@ -112,7 +117,7 @@ jobs:
           icons=$(echo "$files" | grep -c "res/mipmap" || true)
           echo "::notice title=App built::$(basename "$apk") $(du -h "$apk" | cut -f1) | $badging| mipmap files: $icons | $(ls dist | tr '\n' ' ')"
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v5
         with:
           name: kutcheri-planner-1.0.${{ github.run_number }}
           path: dist/*
