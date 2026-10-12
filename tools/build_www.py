@@ -21,7 +21,7 @@ t = (R / "web/list_template.html").read_text()
 c = json.loads((R / "data/concerts.json").read_text())
 o = json.loads((R / "data/organisations.json").read_text())
 assert c and o, "empty data"
-missing = {x["organisation"] for x in c} - {x["name"] for x in o}
+missing = {x["organisation"] for x in c} - {x["name"] for x in o} - {"Organiser not stated"}  # a label, not an organisation
 assert not missing, f"organisations missing: {missing}"
 
 
@@ -93,6 +93,8 @@ for side in ("top", "bottom"):
 
 # 3. phones with large text: only the date strip stays pinned; title, search and filters scroll away
 APP_CSS = """
+/* app: time column grows with the phone text size (em follows Android font scaling; rem does not) */
+.kc { grid-template-columns: 6.4em minmax(0, 1fr) 40px; }
 /* app: pin only the bottom of the top bar (the date strip); the rest scrolls away */
 .bar { top: calc(var(--safe-area-inset-top, env(safe-area-inset-top, 0px)) + var(--keep, var(--barh)) - var(--barh)); }
 .dayh { top: calc(var(--safe-area-inset-top, env(safe-area-inset-top, 0px)) + var(--keep, var(--barh))); }

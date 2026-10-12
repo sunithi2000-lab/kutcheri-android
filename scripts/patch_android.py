@@ -68,6 +68,7 @@ public class MainActivity extends BridgeActivity {{
         ViewCompat.setOnApplyWindowInsetsListener(content, (v, insets) -> {{
             Insets bars = insets.getInsets(WindowInsetsCompat.Type.systemBars() | WindowInsetsCompat.Type.displayCutout() | WindowInsetsCompat.Type.ime());
             v.setPadding(bars.left, bars.top, bars.right, bars.bottom);
+            v.setBackgroundColor(barColor());
             return WindowInsetsCompat.CONSUMED;
         }});
         ViewCompat.requestApplyInsets(content);
@@ -80,9 +81,23 @@ public class MainActivity extends BridgeActivity {{
     }}
 
     // Status/navigation bar areas use the page's own background colour (light or dark theme).
+    private boolean night() {{
+        return (getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK) == Configuration.UI_MODE_NIGHT_YES;
+    }}
+
+    private int barColor() {{
+        return Color.parseColor(night() ? "#0F1513" : "#F6F7F3");
+    }}
+
     private void applySystemBars() {{
-        boolean night = (getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK) == Configuration.UI_MODE_NIGHT_YES;
-        getWindow().getDecorView().setBackgroundColor(Color.parseColor(night ? "#0F1513" : "#F6F7F3"));
+        boolean night = night();
+        getWindow().getDecorView().setBackgroundColor(barColor());
+        View content = findViewById(android.R.id.content);
+        if (content != null) content.setBackgroundColor(barColor());
+        if (android.os.Build.VERSION.SDK_INT >= 29) {{
+            getWindow().setStatusBarContrastEnforced(false);
+            getWindow().setNavigationBarContrastEnforced(false);
+        }}
         WindowInsetsControllerCompat c = WindowCompat.getInsetsController(getWindow(), getWindow().getDecorView());
         c.setAppearanceLightStatusBars(!night);
         c.setAppearanceLightNavigationBars(!night);
