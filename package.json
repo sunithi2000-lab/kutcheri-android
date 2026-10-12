@@ -1,0 +1,17 @@
+{
+  "name": "kutcheri-android",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Android app for the Marghazhi Kutcheri Planner (Chennai Margazhi 2026-27 Carnatic concerts)",
+  "scripts": {
+    "www": "python3 tools/build_www.py"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.0.0",
+    "@capacitor/core": "^8.0.0"
+  },
+  "devDependencies": {
+    "@capacitor/assets": "^3.0.5",
+    "@capacitor/cli": "^8.0.0"
+  }
+}

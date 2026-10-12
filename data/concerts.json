@@ -1,0 +1,4822 @@
+[
+ {
+  "id": "as-2026-12-01-1830-shashanksu",
+  "date": "2026-12-01",
+  "start": "18:30",
+  "end": "21:00",
+  "slot": "Evening",
+  "main_artist": "Shashank Subramanyam",
+  "main_instrument": "Flute",
+  "concert_type": "Instrumental",
+  "performers": [
+   {
+    "name": "Shashank Subramanyam",
+    "instrument": "Flute",
+    "role": "main"
+   },
+   {
+    "name": "L. Ramakrishnan",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "N.C. Bharadwaj",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "K.V. Gopalakrishnan",
+    "instrument": "Kanjira",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Not stated",
+  "organisation": "Mudhra",
+  "festival": "Mudhra",
+  "venue": "Sri Thyaga Brahma Gana Sabha (Vani Mahal)",
+  "area": "T. Nagar",
+  "source_url": "https://www.shashank.org/tours",
+  "source_label": "Artist's website",
+  "note": "",
+  "fetched": "2026-10-12"
+ },
+ {
+  "id": "as-2026-12-03-1600-shashanksu",
+  "date": "2026-12-03",
+  "start": "16:00",
+  "end": "18:30",
+  "slot": "Evening",
+  "main_artist": "Shashank Subramanyam",
+  "main_instrument": "Flute",
+  "concert_type": "Instrumental",
+  "performers": [
+   {
+    "name": "Shashank Subramanyam",
+    "instrument": "Flute",
+    "role": "main"
+   },
+   {
+    "name": "H.N. Bhaskar",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "Parupalli Phalgun",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Not stated",
+  "organisation": "Organiser not stated",
+  "festival": "—",
+  "venue": "Bharatiya Vidya Bhavan, East Mada Street",
+  "area": "Mylapore",
+  "source_url": "https://www.shashank.org/tours",
+  "source_label": "Artist's website",
+  "note": "",
+  "fetched": "2026-10-12"
+ },
+ {
+  "id": "as-2026-12-06-1830-sanjaysubr",
+  "date": "2026-12-06",
+  "start": "18:30",
+  "end": "",
+  "slot": "Evening",
+  "main_artist": "Sanjay Subrahmanyan",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Sanjay Subrahmanyan",
+    "instrument": "Vocal",
+    "role": "main"
+   }
+  ],
+  "entry": "Not stated",
+  "organisation": "Organiser not stated",
+  "festival": "Tamizhum Naanum",
+  "venue": "Music Academy Auditorium, TTK Road",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://sanjaysub.com/",
+  "source_label": "Artist's website",
+  "note": "Accompanists not listed per concert.",
+  "fetched": "2026-10-12"
+ },
+ {
+  "id": "as-2026-12-07-1630-sjjananiy",
+  "date": "2026-12-07",
+  "start": "16:30",
+  "end": "",
+  "slot": "Evening",
+  "main_artist": "S. J. Jananiy",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "S. J. Jananiy",
+    "instrument": "Vocal",
+    "role": "main"
+   }
+  ],
+  "entry": "Not stated",
+  "organisation": "Organiser not stated",
+  "festival": "—",
+  "venue": "Bharatiya Vidya Bhavan",
+  "area": "Mylapore",
+  "source_url": "https://www.bandsintown.com/e/108620496-s.-j.-jananiy-at-bharatiya-vidya-bhavan",
+  "source_label": "Bandsintown artist listing",
+  "note": "Venue taken from the listing link.",
+  "fetched": "2026-10-12"
+ },
+ {
+  "id": "as-2026-12-10-1845-shashanksu",
+  "date": "2026-12-10",
+  "start": "18:45",
+  "end": "20:45",
+  "slot": "Evening",
+  "main_artist": "Shashank Subramanyam",
+  "main_instrument": "Flute",
+  "concert_type": "Instrumental",
+  "performers": [
+   {
+    "name": "Shashank Subramanyam",
+    "instrument": "Flute",
+    "role": "main"
+   },
+   {
+    "name": "Kamalakiran Vinjumuri",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "K. Sai Giridhar",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Not stated",
+  "organisation": "Kartik Fine Arts",
+  "festival": "December Season festival",
+  "venue": "Narada Gana Sabha, TTK Road",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://www.shashank.org/tours",
+  "source_label": "Artist's website",
+  "note": "",
+  "fetched": "2026-10-12"
+ },
+ {
+  "id": "as-2026-12-13-1800-sanjaysubr",
+  "date": "2026-12-13",
+  "start": "18:00",
+  "end": "",
+  "slot": "Evening",
+  "main_artist": "Sanjay Subrahmanyan",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Sanjay Subrahmanyan",
+    "instrument": "Vocal",
+    "role": "main"
+   }
+  ],
+  "entry": "Not stated",
+  "organisation": "Brahma Gana Sabha",
+  "festival": "Brahma Gana Sabha December festival",
+  "venue": "Sundareswarar Hall, Rasika Ranjani Sabha",
+  "area": "Mylapore",
+  "source_url": "https://sanjaysub.com/",
+  "source_label": "Artist's website",
+  "note": "Artist's site marks details as awaited.",
+  "fetched": "2026-10-12"
+ },
+ {
+  "id": "bk-2026-12-14-1830-trichurbro",
+  "date": "2026-12-14",
+  "start": "18:30",
+  "end": "",
+  "slot": "Evening",
+  "main_artist": "Trichur Brothers",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Trichur Brothers",
+    "instrument": "Vocal",
+    "role": "main"
+   }
+  ],
+  "entry": "Ticketed",
+  "organisation": "Bharat Kalachar",
+  "festival": "38th Marghazhi Mahotsav",
+  "venue": "Sri YGP Auditorium, No. 17, Thirumalai Road, T. Nagar, Chennai 600017",
+  "area": "T. Nagar",
+  "source_url": "https://www.bharatkalachar.com/38-bharat-kalachar.html",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "as-2026-12-14-1830-sanjaysubr",
+  "date": "2026-12-14",
+  "start": "18:30",
+  "end": "",
+  "slot": "Evening",
+  "main_artist": "Sanjay Subrahmanyan",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Sanjay Subrahmanyan",
+    "instrument": "Vocal",
+    "role": "main"
+   }
+  ],
+  "entry": "Not stated",
+  "organisation": "Organiser not stated",
+  "festival": "—",
+  "venue": "Vani Mahal, G.N. Road",
+  "area": "T. Nagar",
+  "source_url": "https://sanjaysub.com/",
+  "source_label": "Artist's website",
+  "note": "Artist's site marks details as awaited.",
+  "fetched": "2026-10-12"
+ },
+ {
+  "id": "ma-2026-12-15-1600",
+  "date": "2026-12-15",
+  "start": "16:00",
+  "end": "16:55",
+  "slot": "Evening",
+  "main_artist": "Iluppapattu B Vinodh & Thiruthuraipoondi S Poornachandran",
+  "main_instrument": "Nagaswaram",
+  "concert_type": "Instrumental",
+  "performers": [
+   {
+    "name": "Iluppapattu B Vinodh & Thiruthuraipoondi S Poornachandran",
+    "instrument": "Nagaswaram",
+    "role": "main"
+   },
+   {
+    "name": "Ennayiram S Kamaraj",
+    "instrument": "Thavil",
+    "role": "accompanist"
+   },
+   {
+    "name": "Mayiladuthurai SRDM B Muthukumar",
+    "instrument": "Thavil",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Not stated",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-15-1900",
+  "date": "2026-12-15",
+  "start": "19:00",
+  "end": "21:00",
+  "slot": "Evening",
+  "main_artist": "Vittal Ramamurthy",
+  "main_instrument": "Violin",
+  "concert_type": "Instrumental",
+  "performers": [
+   {
+    "name": "Vittal Ramamurthy",
+    "instrument": "Violin",
+    "role": "main"
+   },
+   {
+    "name": "V V S Murari",
+    "instrument": "Viola",
+    "role": "accompanist"
+   },
+   {
+    "name": "Trivandrum V. Balaji",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "Tripoonithura Radhakrishnan",
+    "instrument": "Ghatam",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Not stated",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-16-0900",
+  "date": "2026-12-16",
+  "start": "09:00",
+  "end": "11:30",
+  "slot": "Morning",
+  "main_artist": "Injikudi E M Subramaniam & Pollachi M Chandrasekhar",
+  "main_instrument": "Nagaswaram",
+  "concert_type": "Instrumental",
+  "performers": [
+   {
+    "name": "Injikudi E M Subramaniam",
+    "instrument": "Nagaswaram",
+    "role": "main"
+   },
+   {
+    "name": "Pollachi M Chandrasekhar",
+    "instrument": "Nagaswaram",
+    "role": "main"
+   },
+   {
+    "name": "Mettupalayam M S Ravikumar",
+    "instrument": "Thavil",
+    "role": "accompanist"
+   },
+   {
+    "name": "Viralimalai R M J Karthik",
+    "instrument": "Thavil",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-16-1145",
+  "date": "2026-12-16",
+  "start": "11:45",
+  "end": "13:15",
+  "slot": "Morning",
+  "main_artist": "K Radhika",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "K Radhika",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "Rangappriya Sankaranarayanan",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "Prahalaad Vijay Varahaswami",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-16-1330",
+  "date": "2026-12-16",
+  "start": "13:30",
+  "end": "15:30",
+  "slot": "Afternoon",
+  "main_artist": "Maharajapuram S.Ganesh Viswanathan",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Maharajapuram S.Ganesh Viswanathan",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "Delhi R.Sridhar",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "Indalur R.D.Adarsh",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "Kurichithanam Ananthakrishnan",
+    "instrument": "Ghatam",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-16-1600",
+  "date": "2026-12-16",
+  "start": "16:00",
+  "end": "18:30",
+  "slot": "Evening",
+  "main_artist": "Vasudha Ravi",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Vasudha Ravi",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "Shradda Ravindran",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "Tirucherai R.Kaushik Rajagopal",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "Bhagyalakshmi M.Krishna",
+    "instrument": "Moharsing",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Ticketed",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-16-1845",
+  "date": "2026-12-16",
+  "start": "18:45",
+  "end": "21:15",
+  "slot": "Evening",
+  "main_artist": "Vivek Sadasivam",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Vivek Sadasivam",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "Sindhu Suchetan",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "V.V. Ramanamurthy",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "Trivandrum R.Rajesh",
+    "instrument": "Ghatam",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Ticketed",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-17-1145",
+  "date": "2026-12-17",
+  "start": "11:45",
+  "end": "13:15",
+  "slot": "Morning",
+  "main_artist": "V.Deepika & V. Nandhika",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal duet",
+  "performers": [
+   {
+    "name": "V.Deepika & V. Nandhika",
+    "instrument": "Vocal Duet",
+    "role": "main"
+   },
+   {
+    "name": "Nyantara Narasimhan",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "Avinash Anand",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-17-1330",
+  "date": "2026-12-17",
+  "start": "13:30",
+  "end": "15:30",
+  "slot": "Afternoon",
+  "main_artist": "Shruthi S Bhat",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Shruthi S Bhat",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "Sudha R.S.Iyer",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "Rohit Prasad",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "Sumana Chandrashekar",
+    "instrument": "Ghatam",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-17-1600",
+  "date": "2026-12-17",
+  "start": "16:00",
+  "end": "18:30",
+  "slot": "Evening",
+  "main_artist": "Aishwarya Vidhya Raghunath",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Aishwarya Vidhya Raghunath",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "Dr.R.Hemalatha",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "B.C.Manjunath",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "V.Sai Subramaniam",
+    "instrument": "Moharsing",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Ticketed",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-17-1845",
+  "date": "2026-12-17",
+  "start": "18:45",
+  "end": "21:15",
+  "slot": "Evening",
+  "main_artist": "Amritha Murali",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Amritha Murali",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "R.K.Shriramkumar",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "N.Manoj Siva",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "K.V.Gopalakrishnan",
+    "instrument": "Kanjira",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Ticketed",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-18-0900",
+  "date": "2026-12-18",
+  "start": "09:00",
+  "end": "11:30",
+  "slot": "Morning",
+  "main_artist": "U.P. Raju & Nagamani",
+  "main_instrument": "Mandolin",
+  "concert_type": "Instrumental",
+  "performers": [
+   {
+    "name": "U.P. Raju & Nagamani",
+    "instrument": "Mandolin",
+    "role": "main"
+   },
+   {
+    "name": "Poongulam S. Subramanian",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "K. Ranganathan",
+    "instrument": "Ghatam",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-18-1145",
+  "date": "2026-12-18",
+  "start": "11:45",
+  "end": "13:15",
+  "slot": "Morning",
+  "main_artist": "S Swaminathan",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "S Swaminathan",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "Chetana Shekar",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "Pazhani V. Balaji",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-18-1330",
+  "date": "2026-12-18",
+  "start": "13:30",
+  "end": "15:30",
+  "slot": "Afternoon",
+  "main_artist": "Bhavya Hari",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Bhavya Hari",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "Mantha Sriramya",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "Gopal Ravindharan",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "P.Giridara Prasad",
+    "instrument": "Kanjira",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "as-2026-12-18-1600-shashanksu",
+  "date": "2026-12-18",
+  "start": "16:00",
+  "end": "18:30",
+  "slot": "Evening",
+  "main_artist": "Shashank Subramanyam & Kunnakudi M. Balamuralikrishna",
+  "main_instrument": "Flute",
+  "concert_type": "Instrumental duet",
+  "performers": [
+   {
+    "name": "Shashank Subramanyam",
+    "instrument": "Flute",
+    "role": "main"
+   },
+   {
+    "name": "Kunnakudi M. Balamuralikrishna",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "Patri Satishkumar",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "B. Shree Sundarkumar",
+    "instrument": "Kanjira",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Not stated",
+  "organisation": "Organiser not stated",
+  "festival": "—",
+  "venue": "Sri Krishna Gana Sabha Main Hall",
+  "area": "T. Nagar",
+  "source_url": "https://www.shashank.org/tours",
+  "source_label": "Artist's website",
+  "note": "Flute and vocal duet.",
+  "fetched": "2026-10-12"
+ },
+ {
+  "id": "ma-2026-12-18-1600",
+  "date": "2026-12-18",
+  "start": "16:00",
+  "end": "18:30",
+  "slot": "Evening",
+  "main_artist": "Dr.Pantula Rama",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Dr.Pantula Rama",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "M.S.N.Murthy",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "J. Vaidhyanathan",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "Dr.S.Karthick",
+    "instrument": "Ghatam",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Ticketed",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "bk-2026-12-18-1830-bolavavitt",
+  "date": "2026-12-18",
+  "start": "18:30",
+  "end": "",
+  "slot": "Evening",
+  "main_artist": "Bolava Vitthala",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Bolava Vitthala",
+    "instrument": "Vocal",
+    "role": "main"
+   }
+  ],
+  "entry": "Ticketed",
+  "organisation": "Bharat Kalachar",
+  "festival": "38th Marghazhi Mahotsav",
+  "venue": "Sri YGP Auditorium, No. 17, Thirumalai Road, T. Nagar, Chennai 600017",
+  "area": "T. Nagar",
+  "source_url": "https://www.bharatkalachar.com/38-bharat-kalachar.html",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-18-1845",
+  "date": "2026-12-18",
+  "start": "18:45",
+  "end": "21:15",
+  "slot": "Evening",
+  "main_artist": "R.Ashwath Narayanan",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "R.Ashwath Narayanan",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "B.Vittal Rangan",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "Umayalpuram K.Sivaraman",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "V.Anirudh Athreya",
+    "instrument": "Kanjira",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Ticketed",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-19-0900",
+  "date": "2026-12-19",
+  "start": "09:00",
+  "end": "11:30",
+  "slot": "Morning",
+  "main_artist": "Delhi P.Sunderrajan",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Delhi P.Sunderrajan",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "Nagai R.Muralidharan",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "Trichur C.Narendran",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "Manjoor Unnikrishnan",
+    "instrument": "Ghatam",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-19-1145",
+  "date": "2026-12-19",
+  "start": "11:45",
+  "end": "13:15",
+  "slot": "Morning",
+  "main_artist": "R. Ratipriya",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "R. Ratipriya",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "Aparna Thyagarajan",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "R. Aravind Srikanth",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-19-1330",
+  "date": "2026-12-19",
+  "start": "13:30",
+  "end": "15:30",
+  "slot": "Afternoon",
+  "main_artist": "Vani Ramamurthi",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Vani Ramamurthi",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "Shiva Ramamurthi",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "L.Subramanian",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "Anil Parashara",
+    "instrument": "Kanjira",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "as-2026-12-19-1600-sjjananiy",
+  "date": "2026-12-19",
+  "start": "16:00",
+  "end": "",
+  "slot": "Evening",
+  "main_artist": "S. J. Jananiy",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "S. J. Jananiy",
+    "instrument": "Vocal",
+    "role": "main"
+   }
+  ],
+  "entry": "Not stated",
+  "organisation": "Organiser not stated",
+  "festival": "—",
+  "venue": "Vani Mahal",
+  "area": "T. Nagar",
+  "source_url": "https://www.bandsintown.com/e/108620503-s.-j.-jananiy-at-vani-mahal",
+  "source_label": "Bandsintown artist listing",
+  "note": "Venue taken from the listing link.",
+  "fetched": "2026-10-12"
+ },
+ {
+  "id": "ma-2026-12-19-1600",
+  "date": "2026-12-19",
+  "start": "16:00",
+  "end": "18:30",
+  "slot": "Evening",
+  "main_artist": "Trivandrum Dr.N.J.Nandini",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Trivandrum Dr.N.J.Nandini",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "Apoorva Krishna",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "K.V.Prasad",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "Vellattanjoor Sreejith",
+    "instrument": "Ghatam",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Ticketed",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-19-1845",
+  "date": "2026-12-19",
+  "start": "18:45",
+  "end": "21:15",
+  "slot": "Evening",
+  "main_artist": "Madurai T.N.S.Krishna",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Madurai T.N.S.Krishna",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "Mysore V.Srikanth",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "Trichy B.Harikumar",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "H.Prasanna",
+    "instrument": "Ghatam",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Ticketed",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-20-0900",
+  "date": "2026-12-20",
+  "start": "09:00",
+  "end": "11:30",
+  "slot": "Morning",
+  "main_artist": "A.S.Murali",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "A.S.Murali",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "M.A.Sundareswaran",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "S.V.Ramani",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "N.Amrit",
+    "instrument": "Kanjira",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "bk-2026-12-20-1030-ritvikvadd",
+  "date": "2026-12-20",
+  "start": "10:30",
+  "end": "",
+  "slot": "Morning",
+  "main_artist": "Ritvik Vaddi Rao",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Ritvik Vaddi Rao",
+    "instrument": "Vocal",
+    "role": "main"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "Bharat Kalachar",
+  "festival": "38th Marghazhi Mahotsav",
+  "venue": "Sri YGP Auditorium, No. 17, Thirumalai Road, T. Nagar, Chennai 600017",
+  "area": "T. Nagar",
+  "source_url": "https://www.bharatkalachar.com/38-bharat-kalachar.html",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-20-1145",
+  "date": "2026-12-20",
+  "start": "11:45",
+  "end": "13:15",
+  "slot": "Morning",
+  "main_artist": "Charulatha Chandrasekar",
+  "main_instrument": "Veena",
+  "concert_type": "Instrumental",
+  "performers": [
+   {
+    "name": "Charulatha Chandrasekar",
+    "instrument": "Veena",
+    "role": "main"
+   },
+   {
+    "name": "Sunaada Krishna Amai",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "Murali Varadharajan",
+    "instrument": "Kanjira",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-20-1330",
+  "date": "2026-12-20",
+  "start": "13:30",
+  "end": "15:30",
+  "slot": "Afternoon",
+  "main_artist": "Dr. Aishwarya Shankar",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Dr. Aishwarya Shankar",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "V.S.Gokul",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "T.Nikshith",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "G.Ganapathy",
+    "instrument": "Ghatam",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "bk-2026-12-20-1600-sidsriram",
+  "date": "2026-12-20",
+  "start": "16:00",
+  "end": "",
+  "slot": "Evening",
+  "main_artist": "Sid Sriram",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Sid Sriram",
+    "instrument": "Vocal",
+    "role": "main"
+   }
+  ],
+  "entry": "Ticketed (special)",
+  "organisation": "Bharat Kalachar",
+  "festival": "38th Marghazhi Mahotsav",
+  "venue": "Sri YGP Auditorium, No. 17, Thirumalai Road, T. Nagar, Chennai 600017",
+  "area": "T. Nagar",
+  "source_url": "https://www.bharatkalachar.com/38-bharat-kalachar.html",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-20-1600",
+  "date": "2026-12-20",
+  "start": "16:00",
+  "end": "18:30",
+  "slot": "Evening",
+  "main_artist": "Dr.S.Sowmya",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Dr.S.Sowmya",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "Embar S.Kannan",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "Neyveli R.Narayanan",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "V.Anirudh Athreya",
+    "instrument": "Kanjira",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Ticketed",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "as-2026-12-20-1830-shashanksu",
+  "date": "2026-12-20",
+  "start": "18:30",
+  "end": "",
+  "slot": "Evening",
+  "main_artist": "Shashank Subramanyam",
+  "main_instrument": "Flute",
+  "concert_type": "Instrumental",
+  "performers": [
+   {
+    "name": "Shashank Subramanyam",
+    "instrument": "Flute",
+    "role": "main"
+   }
+  ],
+  "entry": "Not stated",
+  "organisation": "Organiser not stated",
+  "festival": "—",
+  "venue": "Sri Ganapathy Sachchidananda Ashram",
+  "area": "Velachery",
+  "source_url": "https://www.shashank.org/tours",
+  "source_label": "Artist's website",
+  "note": "Listed as a flute solo; no end time.",
+  "fetched": "2026-10-12"
+ },
+ {
+  "id": "ma-2026-12-20-1845",
+  "date": "2026-12-20",
+  "start": "18:45",
+  "end": "21:15",
+  "slot": "Evening",
+  "main_artist": "K.Bharat Sundar",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "K.Bharat Sundar",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "Sayee Rakshith",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "N.C.Bharadwaj",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "Chandrasekhara Sharma",
+    "instrument": "Ghatam",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Ticketed",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-21-0900",
+  "date": "2026-12-21",
+  "start": "09:00",
+  "end": "11:30",
+  "slot": "Morning",
+  "main_artist": "Sankari Krishnan",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Sankari Krishnan",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "Shreya Devnath",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "K.Arun Prakash",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "Sukanya Ramgopal",
+    "instrument": "Ghatam",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-21-1145",
+  "date": "2026-12-21",
+  "start": "11:45",
+  "end": "13:15",
+  "slot": "Morning",
+  "main_artist": "Abilash Giriprasad",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Abilash Giriprasad",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "V. Sri Purna Gayatri Sivani",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "Sarvesh Karthick",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-21-1330",
+  "date": "2026-12-21",
+  "start": "13:30",
+  "end": "15:30",
+  "slot": "Afternoon",
+  "main_artist": "Kolkata Padmavathi Saranathan",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Kolkata Padmavathi Saranathan",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "Visvesh Chandrasekar",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "G.S.Nagaraj",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "Manjesh Mohanan",
+    "instrument": "Ghatam",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-21-1600",
+  "date": "2026-12-21",
+  "start": "16:00",
+  "end": "18:30",
+  "slot": "Evening",
+  "main_artist": "Vidya Kalyanaraman",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Vidya Kalyanaraman",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "R.Raghul",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "B.Ganapathyraman",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "Trichy Dr.K.Murali",
+    "instrument": "Ghatam",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Ticketed",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "bk-2026-12-21-1830-sudharagun",
+  "date": "2026-12-21",
+  "start": "18:30",
+  "end": "",
+  "slot": "Evening",
+  "main_artist": "Sudha Ragunathan and Party",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Sudha Ragunathan and Party",
+    "instrument": "Vocal",
+    "role": "main"
+   }
+  ],
+  "entry": "Ticketed",
+  "organisation": "Bharat Kalachar",
+  "festival": "38th Marghazhi Mahotsav",
+  "venue": "Sri YGP Auditorium, No. 17, Thirumalai Road, T. Nagar, Chennai 600017",
+  "area": "T. Nagar",
+  "source_url": "https://www.bharatkalachar.com/38-bharat-kalachar.html",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-21-1845",
+  "date": "2026-12-21",
+  "start": "18:45",
+  "end": "21:15",
+  "slot": "Evening",
+  "main_artist": "Sikkil C.Gurucharan",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Sikkil C.Gurucharan",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "V.Sanjeev",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "Sumesh S. Narayanan",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "K.V.Gopalakrishnan",
+    "instrument": "Kanjira",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Ticketed",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-22-0900",
+  "date": "2026-12-22",
+  "start": "09:00",
+  "end": "11:30",
+  "slot": "Morning",
+  "main_artist": "J.T. Jeyaraaj Krishnan & Jaysri Jeyaraaj Krishnan",
+  "main_instrument": "Veena",
+  "concert_type": "Instrumental duet",
+  "performers": [
+   {
+    "name": "J.T. Jeyaraaj Krishnan & Jaysri Jeyaraaj Krishnan",
+    "instrument": "Veena Duet",
+    "role": "main"
+   },
+   {
+    "name": "Kumbakonam K. Swaminathan",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "Shinu Gopinath",
+    "instrument": "Ghatam",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-22-1145",
+  "date": "2026-12-22",
+  "start": "11:45",
+  "end": "13:15",
+  "slot": "Morning",
+  "main_artist": "S. Srivathsan",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "S. Srivathsan",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "Rishabh Ranganathan",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "Srikar Chittari",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-22-1330",
+  "date": "2026-12-22",
+  "start": "13:30",
+  "end": "15:30",
+  "slot": "Afternoon",
+  "main_artist": "J.B.Keerthana",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "J.B.Keerthana",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "K.V.Krishna",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "V.S.Raghavan",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "Sunaad Anoor",
+    "instrument": "Kanjira",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-22-1600",
+  "date": "2026-12-22",
+  "start": "16:00",
+  "end": "18:30",
+  "slot": "Evening",
+  "main_artist": "Shashank Subramanyam",
+  "main_instrument": "Flute",
+  "concert_type": "Instrumental",
+  "performers": [
+   {
+    "name": "Shashank Subramanyam",
+    "instrument": "Flute",
+    "role": "main"
+   },
+   {
+    "name": "Kamalakiran Vinjumuri",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "K.Sai Giridhar",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "G.Guruprasanna",
+    "instrument": "Kanjira",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Ticketed",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-22-1845",
+  "date": "2026-12-22",
+  "start": "18:45",
+  "end": "21:15",
+  "slot": "Evening",
+  "main_artist": "Malladi Brothers - Sreeramaprasad & Dr. Ravikumar",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Malladi Brothers - Sreeramaprasad & Dr. Ravikumar",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "L.Ramakrishnan",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "Dr.Trichy Sankaran",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "U.N.Giridhar Udupa",
+    "instrument": "Ghatam",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Ticketed",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-23-0900",
+  "date": "2026-12-23",
+  "start": "09:00",
+  "end": "11:30",
+  "slot": "Morning",
+  "main_artist": "Delhi V. Muthukumar",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Delhi V. Muthukumar",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "Sruthi Sarathy",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "H.S. Sudhindra",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "A.S.Krishnan",
+    "instrument": "Moharsing",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-23-1145",
+  "date": "2026-12-23",
+  "start": "11:45",
+  "end": "13:15",
+  "slot": "Morning",
+  "main_artist": "Shruthi Shankar Kumar",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Shruthi Shankar Kumar",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "Bhargav Tumkur",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "Deepikaa Sreenivasan",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-23-1330",
+  "date": "2026-12-23",
+  "start": "13:30",
+  "end": "15:30",
+  "slot": "Afternoon",
+  "main_artist": "S.Adithyanarayanan",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "S.Adithyanarayanan",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "Shivkumar Anantharaman",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "Kishore Ramesh",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "Dr. Ravi Balasubramanian",
+    "instrument": "Ghatam",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-23-1600",
+  "date": "2026-12-23",
+  "start": "16:00",
+  "end": "18:30",
+  "slot": "Evening",
+  "main_artist": "Abhishek Raghuram",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Abhishek Raghuram",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "H.N.Bhaskar",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "N.C.Bharadwaj",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "Vazhappally R.Krishnakumar",
+    "instrument": "Ghatam",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Ticketed",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-23-1845",
+  "date": "2026-12-23",
+  "start": "18:45",
+  "end": "21:15",
+  "slot": "Evening",
+  "main_artist": "Lalgudi G.J.R.Krishnan & Lalgudi Vijayalakshmi",
+  "main_instrument": "Violin",
+  "concert_type": "Instrumental duet",
+  "performers": [
+   {
+    "name": "Lalgudi G.J.R.Krishnan & Lalgudi Vijayalakshmi",
+    "instrument": "Violin Duet",
+    "role": "main"
+   },
+   {
+    "name": "Trichy B.Harikumar",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "Dr. Suresh Vaidyanathan",
+    "instrument": "Ghatam",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Ticketed",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-24-0900",
+  "date": "2026-12-24",
+  "start": "09:00",
+  "end": "11:30",
+  "slot": "Morning",
+  "main_artist": "Malladi Suribabu",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Malladi Suribabu",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "Kumbakonam M R Gopinath",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "Parupalli Phalgun",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "Udupi S.Sreedhar",
+    "instrument": "Ghatam",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-24-1145",
+  "date": "2026-12-24",
+  "start": "11:45",
+  "end": "13:15",
+  "slot": "Morning",
+  "main_artist": "Deepthi Suresh",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Deepthi Suresh",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "P. Akshaya",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "Rohith Ashok",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-24-1330",
+  "date": "2026-12-24",
+  "start": "13:30",
+  "end": "15:30",
+  "slot": "Afternoon",
+  "main_artist": "Dr. N.Jayakrishnan Unni",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Dr. N.Jayakrishnan Unni",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "Sandeep Ramachandran",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "Karthick Ganeshraman",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "G.Venkatesh",
+    "instrument": "Moharsing",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-24-1600",
+  "date": "2026-12-24",
+  "start": "16:00",
+  "end": "18:30",
+  "slot": "Evening",
+  "main_artist": "Sriranjani Tapasya Santhanagopalan",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Sriranjani Tapasya Santhanagopalan",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "Kamalakiran Vinjumuri",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "Praveen Sparsh",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "Vazhappally R.Krishnakumar",
+    "instrument": "Ghatam",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Ticketed",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "as-2026-12-24-1830-sanjaysubr",
+  "date": "2026-12-24",
+  "start": "18:30",
+  "end": "",
+  "slot": "Evening",
+  "main_artist": "Sanjay Subrahmanyan",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Sanjay Subrahmanyan",
+    "instrument": "Vocal",
+    "role": "main"
+   }
+  ],
+  "entry": "Ticketed",
+  "organisation": "Sanjay Subrahmanyan",
+  "festival": "Sanjay Sabha Live",
+  "venue": "Muthamizh Peravai, R.A. Puram",
+  "area": "R.A. Puram",
+  "source_url": "https://sanjaysub.com/",
+  "source_label": "Artist's website",
+  "note": "Ticket link on the artist's site.",
+  "fetched": "2026-10-12"
+ },
+ {
+  "id": "ma-2026-12-24-1845",
+  "date": "2026-12-24",
+  "start": "18:45",
+  "end": "21:15",
+  "slot": "Evening",
+  "main_artist": "Ramana Balachandhran",
+  "main_instrument": "Veena",
+  "concert_type": "Instrumental",
+  "performers": [
+   {
+    "name": "Ramana Balachandhran",
+    "instrument": "Veena",
+    "role": "main"
+   },
+   {
+    "name": "Anantha R.Krishnan",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "B.Shree Sundarkumar",
+    "instrument": "Kanjira",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Ticketed",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-25-0900",
+  "date": "2026-12-25",
+  "start": "09:00",
+  "end": "11:30",
+  "slot": "Morning",
+  "main_artist": "T.M. Krishna",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "T.M. Krishna",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "H.N.Bhaskar",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "Praveen Sparsh",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "S.Sunil Kumar",
+    "instrument": "Kanjira",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "bk-2026-12-25-1030-bkannanand",
+  "date": "2026-12-25",
+  "start": "10:30",
+  "end": "",
+  "slot": "Morning",
+  "main_artist": "B Kannan and Party",
+  "main_instrument": "Veena",
+  "concert_type": "Instrumental",
+  "performers": [
+   {
+    "name": "B Kannan and Party",
+    "instrument": "Veena",
+    "role": "main"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "Bharat Kalachar",
+  "festival": "38th Marghazhi Mahotsav",
+  "venue": "Sri YGP Auditorium, No. 17, Thirumalai Road, T. Nagar, Chennai 600017",
+  "area": "T. Nagar",
+  "source_url": "https://www.bharatkalachar.com/38-bharat-kalachar.html",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-25-1145",
+  "date": "2026-12-25",
+  "start": "11:45",
+  "end": "13:15",
+  "slot": "Morning",
+  "main_artist": "B J Madhuri Kaushik",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "B J Madhuri Kaushik",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "Palakkad G. Kailasapathy",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "S.Vignesh",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-25-1330",
+  "date": "2026-12-25",
+  "start": "13:30",
+  "end": "15:30",
+  "slot": "Afternoon",
+  "main_artist": "Kruthi Bhat",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Kruthi Bhat",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "S.Subhashree",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "Ambur U.Padmanabhan",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "S.Hari Kishore",
+    "instrument": "Kanjira",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "bk-2026-12-25-1400-malladiyas",
+  "date": "2026-12-25",
+  "start": "14:00",
+  "end": "",
+  "slot": "Afternoon",
+  "main_artist": "Malladi Yasashvi Anand",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Malladi Yasashvi Anand",
+    "instrument": "Vocal",
+    "role": "main"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "Bharat Kalachar",
+  "festival": "38th Marghazhi Mahotsav",
+  "venue": "Sri YGP Auditorium, No. 17, Thirumalai Road, T. Nagar, Chennai 600017",
+  "area": "T. Nagar",
+  "source_url": "https://www.bharatkalachar.com/38-bharat-kalachar.html",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-25-1600",
+  "date": "2026-12-25",
+  "start": "16:00",
+  "end": "18:30",
+  "slot": "Evening",
+  "main_artist": "Dr. K.Gayatri",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Dr. K.Gayatri",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "Charulatha Ramanujam",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "Vijay B.Natesan",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "C.P.Vyasavittala",
+    "instrument": "Kanjira",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Ticketed",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "as-2026-12-25-1830-sanjaysubr",
+  "date": "2026-12-25",
+  "start": "18:30",
+  "end": "",
+  "slot": "Evening",
+  "main_artist": "Sanjay Subrahmanyan",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Sanjay Subrahmanyan",
+    "instrument": "Vocal",
+    "role": "main"
+   }
+  ],
+  "entry": "Ticketed",
+  "organisation": "Sanjay Subrahmanyan",
+  "festival": "Sanjay Sabha Live",
+  "venue": "Muthamizh Peravai, R.A. Puram",
+  "area": "R.A. Puram",
+  "source_url": "https://sanjaysub.com/",
+  "source_label": "Artist's website",
+  "note": "Ticket link on the artist's site.",
+  "fetched": "2026-10-12"
+ },
+ {
+  "id": "ma-2026-12-25-1845",
+  "date": "2026-12-25",
+  "start": "18:45",
+  "end": "21:15",
+  "slot": "Evening",
+  "main_artist": "Sandeep Narayan",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Sandeep Narayan",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "B.Ananthakrishnan",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "S.J.Arjun Ganesh",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "S.Sunil Kumar",
+    "instrument": "Kanjira",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Ticketed",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-26-0900",
+  "date": "2026-12-26",
+  "start": "09:00",
+  "end": "11:30",
+  "slot": "Morning",
+  "main_artist": "R Parthasarathy",
+  "main_instrument": "Veena",
+  "concert_type": "Instrumental",
+  "performers": [
+   {
+    "name": "R Parthasarathy",
+    "instrument": "Veena",
+    "role": "main"
+   },
+   {
+    "name": "Shertalai R.Ananthakrishnan",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "N. Rajaraman",
+    "instrument": "Ghatam",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "bk-2026-12-26-1030-rajeshvaid",
+  "date": "2026-12-26",
+  "start": "10:30",
+  "end": "",
+  "slot": "Morning",
+  "main_artist": "Rajesh Vaidya & Jayanth",
+  "main_instrument": "Veena & Flute",
+  "concert_type": "Instrumental duet",
+  "performers": [
+   {
+    "name": "Rajesh Vaidya & Jayanth",
+    "instrument": "Veena & Flute Duet",
+    "role": "main"
+   }
+  ],
+  "entry": "Ticketed (special)",
+  "organisation": "Bharat Kalachar",
+  "festival": "38th Marghazhi Mahotsav",
+  "venue": "Sri YGP Auditorium, No. 17, Thirumalai Road, T. Nagar, Chennai 600017",
+  "area": "T. Nagar",
+  "source_url": "https://www.bharatkalachar.com/38-bharat-kalachar.html",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "as-2026-12-26-1100-shashanksu",
+  "date": "2026-12-26",
+  "start": "11:00",
+  "end": "12:30",
+  "slot": "Morning",
+  "main_artist": "Shashank Subramanyam",
+  "main_instrument": "Flute",
+  "concert_type": "Instrumental",
+  "performers": [
+   {
+    "name": "Shashank Subramanyam",
+    "instrument": "Flute",
+    "role": "main"
+   },
+   {
+    "name": "H.N. Bhaskar",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "Patri Satishkumar",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Not stated",
+  "organisation": "Sruthi Laya Kendra",
+  "festival": "Winter Music Festival",
+  "venue": "Bharatiya Vidya Bhavan, East Mada Street",
+  "area": "Mylapore",
+  "source_url": "https://www.shashank.org/tours",
+  "source_label": "Artist's website",
+  "note": "",
+  "fetched": "2026-10-12"
+ },
+ {
+  "id": "ma-2026-12-26-1145",
+  "date": "2026-12-26",
+  "start": "11:45",
+  "end": "13:15",
+  "slot": "Morning",
+  "main_artist": "R.Sai Vignesh",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "R.Sai Vignesh",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "Haritha Narayanan",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "Ajeet Sridhar",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-26-1330",
+  "date": "2026-12-26",
+  "start": "13:30",
+  "end": "15:30",
+  "slot": "Afternoon",
+  "main_artist": "Anahita & Apoorva",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Anahita & Apoorva",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "Pappu Gyandev",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "D.V.Sivaraman",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "Somnath Roy",
+    "instrument": "Ghatam",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-26-1600",
+  "date": "2026-12-26",
+  "start": "16:00",
+  "end": "18:30",
+  "slot": "Evening",
+  "main_artist": "Dr. Jayanthi Kumaresh",
+  "main_instrument": "Veena",
+  "concert_type": "Instrumental",
+  "performers": [
+   {
+    "name": "Dr. Jayanthi Kumaresh",
+    "instrument": "Veena",
+    "role": "main"
+   },
+   {
+    "name": "K.U.Jayachandra Rao",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "Trichy S.Krishnaswamy",
+    "instrument": "Ghatam",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Ticketed",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "bk-2026-12-26-1630-suryagayat",
+  "date": "2026-12-26",
+  "start": "16:30",
+  "end": "",
+  "slot": "Evening",
+  "main_artist": "Surya Gayatri and Party",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Surya Gayatri and Party",
+    "instrument": "Vocal",
+    "role": "main"
+   }
+  ],
+  "entry": "Ticketed",
+  "organisation": "Bharat Kalachar",
+  "festival": "38th Marghazhi Mahotsav",
+  "venue": "Sri YGP Auditorium, No. 17, Thirumalai Road, T. Nagar, Chennai 600017",
+  "area": "T. Nagar",
+  "source_url": "https://www.bharatkalachar.com/38-bharat-kalachar.html",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-26-1845",
+  "date": "2026-12-26",
+  "start": "18:45",
+  "end": "21:15",
+  "slot": "Evening",
+  "main_artist": "Ramakrishnan Murthy",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Ramakrishnan Murthy",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "R.K.Shriramkumar",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "Delhi S.Sairam",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "Krishna Sriram",
+    "instrument": "Ghatam",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Ticketed",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "as-2026-12-26-1900-sjjananiy",
+  "date": "2026-12-26",
+  "start": "19:00",
+  "end": "",
+  "slot": "Evening",
+  "main_artist": "S. J. Jananiy",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "S. J. Jananiy",
+    "instrument": "Vocal",
+    "role": "main"
+   }
+  ],
+  "entry": "Not stated",
+  "organisation": "Organiser not stated",
+  "festival": "—",
+  "venue": "Bharatiya Vidya Bhavan",
+  "area": "Mylapore",
+  "source_url": "https://www.bandsintown.com/e/108620580-s.-j.-jananiy-at-bharatiya-vidya-bhavan",
+  "source_label": "Bandsintown artist listing",
+  "note": "Venue taken from the listing link.",
+  "fetched": "2026-10-12"
+ },
+ {
+  "id": "ma-2026-12-27-0900",
+  "date": "2026-12-27",
+  "start": "09:00",
+  "end": "11:30",
+  "slot": "Morning",
+  "main_artist": "T.V.S. Mahadevan",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "T.V.S. Mahadevan",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "Dr. Nishanth Chandran",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "R.Sankaranarayanan",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "Udupi S Srikanth",
+    "instrument": "Kanjira",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "bk-2026-12-27-1030-hsooryanar",
+  "date": "2026-12-27",
+  "start": "10:30",
+  "end": "",
+  "slot": "Morning",
+  "main_artist": "H. Sooryanarayanan",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "H. Sooryanarayanan",
+    "instrument": "Vocal",
+    "role": "main"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "Bharat Kalachar",
+  "festival": "38th Marghazhi Mahotsav",
+  "venue": "Sri YGP Auditorium, No. 17, Thirumalai Road, T. Nagar, Chennai 600017",
+  "area": "T. Nagar",
+  "source_url": "https://www.bharatkalachar.com/38-bharat-kalachar.html",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-27-1145",
+  "date": "2026-12-27",
+  "start": "11:45",
+  "end": "13:15",
+  "slot": "Morning",
+  "main_artist": "R. Lakshmipriya",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "R. Lakshmipriya",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "Sreelakshmi S.Bhat",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "Aduthurai G.Guruprasadh",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-27-1330",
+  "date": "2026-12-27",
+  "start": "13:30",
+  "end": "15:30",
+  "slot": "Afternoon",
+  "main_artist": "Akshay Padmanabhan",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Akshay Padmanabhan",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "Vignesh Thyagarajan",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "L. Sudarsan Srinivas",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "bk-2026-12-27-1400-rishabhkau",
+  "date": "2026-12-27",
+  "start": "14:00",
+  "end": "",
+  "slot": "Afternoon",
+  "main_artist": "Rishabh Kaushik",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Rishabh Kaushik",
+    "instrument": "Vocal",
+    "role": "main"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "Bharat Kalachar",
+  "festival": "38th Marghazhi Mahotsav",
+  "venue": "Sri YGP Auditorium, No. 17, Thirumalai Road, T. Nagar, Chennai 600017",
+  "area": "T. Nagar",
+  "source_url": "https://www.bharatkalachar.com/38-bharat-kalachar.html",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-27-1600",
+  "date": "2026-12-27",
+  "start": "16:00",
+  "end": "18:30",
+  "slot": "Evening",
+  "main_artist": "Amrutha Venkatesh",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Amrutha Venkatesh",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "Bombay R. Madhavan",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "Nanjil A.R.Arul",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "Dr.S.Karthick",
+    "instrument": "Ghatam",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Ticketed",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "bk-2026-12-27-1630-malladibro",
+  "date": "2026-12-27",
+  "start": "16:30",
+  "end": "",
+  "slot": "Evening",
+  "main_artist": "Malladi Brothers - Sri Ramaprasad and Ravikumar",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Malladi Brothers - Sri Ramaprasad and Ravikumar",
+    "instrument": "Vocal",
+    "role": "main"
+   }
+  ],
+  "entry": "Ticketed",
+  "organisation": "Bharat Kalachar",
+  "festival": "38th Marghazhi Mahotsav",
+  "venue": "Sri YGP Auditorium, No. 17, Thirumalai Road, T. Nagar, Chennai 600017",
+  "area": "T. Nagar",
+  "source_url": "https://www.bharatkalachar.com/38-bharat-kalachar.html",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-27-1845",
+  "date": "2026-12-27",
+  "start": "18:45",
+  "end": "21:15",
+  "slot": "Evening",
+  "main_artist": "Sanjay Subrahmanyan",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Sanjay Subrahmanyan",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "S.Varadarajan",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "Neyveli B.Venkatesh",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "S.Venkataramanan",
+    "instrument": "Kanjira",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Ticketed",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-28-0900",
+  "date": "2026-12-28",
+  "start": "09:00",
+  "end": "11:30",
+  "slot": "Morning",
+  "main_artist": "C R Vaidyanathan",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "C R Vaidyanathan",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "T.K.V.Ramanujacharlu",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "Melakaveri K.Balaji",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "Bangalore B.Rajasekar",
+    "instrument": "Moharsing",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-28-1145",
+  "date": "2026-12-28",
+  "start": "11:45",
+  "end": "13:15",
+  "slot": "Morning",
+  "main_artist": "C.S. Keshava Chandra",
+  "main_instrument": "Flute",
+  "concert_type": "Instrumental",
+  "performers": [
+   {
+    "name": "C.S. Keshava Chandra",
+    "instrument": "Flute",
+    "role": "main"
+   },
+   {
+    "name": "Aniruddha Bharadwaj",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "Aswini Srinivasan",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "Shamith S Gowda",
+    "instrument": "Ghatam",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-28-1330",
+  "date": "2026-12-28",
+  "start": "13:30",
+  "end": "15:30",
+  "slot": "Afternoon",
+  "main_artist": "V.Venkatanagarajan",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "V.Venkatanagarajan",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "Vaibhav Ramani",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "S.Gomathi Shankar",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "Vishnu Kammath",
+    "instrument": "Kanjira",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "bk-2026-12-28-1400-priyakrish",
+  "date": "2026-12-28",
+  "start": "14:00",
+  "end": "",
+  "slot": "Afternoon",
+  "main_artist": "Priya Krishnamurthy",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Priya Krishnamurthy",
+    "instrument": "Vocal",
+    "role": "main"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "Bharat Kalachar",
+  "festival": "38th Marghazhi Mahotsav",
+  "venue": "Sri YGP Auditorium, No. 17, Thirumalai Road, T. Nagar, Chennai 600017",
+  "area": "T. Nagar",
+  "source_url": "https://www.bharatkalachar.com/38-bharat-kalachar.html",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-28-1600",
+  "date": "2026-12-28",
+  "start": "16:00",
+  "end": "18:30",
+  "slot": "Evening",
+  "main_artist": "Sudha Ragunathan",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Sudha Ragunathan",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "Embar S.Kannan",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "Sumesh S. Narayanan",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "Krishna Sriram",
+    "instrument": "Ghatam",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Ticketed",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "bk-2026-12-28-1630-vaishnavir",
+  "date": "2026-12-28",
+  "start": "16:30",
+  "end": "",
+  "slot": "Evening",
+  "main_artist": "Vaishnavi Ramdos",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Vaishnavi Ramdos",
+    "instrument": "Vocal",
+    "role": "main"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "Bharat Kalachar",
+  "festival": "38th Marghazhi Mahotsav",
+  "venue": "Sri YGP Auditorium, No. 17, Thirumalai Road, T. Nagar, Chennai 600017",
+  "area": "T. Nagar",
+  "source_url": "https://www.bharatkalachar.com/38-bharat-kalachar.html",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "as-2026-12-28-1830-sanjaysubr",
+  "date": "2026-12-28",
+  "start": "18:30",
+  "end": "",
+  "slot": "Evening",
+  "main_artist": "Sanjay Subrahmanyan",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Sanjay Subrahmanyan",
+    "instrument": "Vocal",
+    "role": "main"
+   }
+  ],
+  "entry": "Ticketed",
+  "organisation": "Sanjay Subrahmanyan",
+  "festival": "Sanjay Sabha Live",
+  "venue": "M.S. Subbulakshmi Auditorium, Asian College of Journalism",
+  "area": "Taramani",
+  "source_url": "https://sanjaysub.com/",
+  "source_label": "Artist's website",
+  "note": "Ticket link on the artist's site.",
+  "fetched": "2026-10-12"
+ },
+ {
+  "id": "ma-2026-12-28-1845",
+  "date": "2026-12-28",
+  "start": "18:45",
+  "end": "21:15",
+  "slot": "Evening",
+  "main_artist": "Kunnakudi M.Balamuralikrishna",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Kunnakudi M.Balamuralikrishna",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "Akkarai S. Subhalakshmi",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "B.Shree Sundarkumar",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "Chandrasekhara Sharma",
+    "instrument": "Ghatam",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Ticketed",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-29-0900",
+  "date": "2026-12-29",
+  "start": "09:00",
+  "end": "11:30",
+  "slot": "Morning",
+  "main_artist": "B.V. Balasai",
+  "main_instrument": "Flute",
+  "concert_type": "Instrumental",
+  "performers": [
+   {
+    "name": "B.V. Balasai",
+    "instrument": "Flute",
+    "role": "main"
+   },
+   {
+    "name": "B.U.Ganesh Prasad",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "Karukurichi N.Mohanram",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "R.Raman",
+    "instrument": "Moharsing",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "bk-2026-12-29-1030-madisonsan",
+  "date": "2026-12-29",
+  "start": "10:30",
+  "end": "",
+  "slot": "Morning",
+  "main_artist": "(Madison) Sanjay Suresh",
+  "main_instrument": "Violin",
+  "concert_type": "Instrumental",
+  "performers": [
+   {
+    "name": "(Madison) Sanjay Suresh",
+    "instrument": "Violin",
+    "role": "main"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "Bharat Kalachar",
+  "festival": "38th Marghazhi Mahotsav",
+  "venue": "Sri YGP Auditorium, No. 17, Thirumalai Road, T. Nagar, Chennai 600017",
+  "area": "T. Nagar",
+  "source_url": "https://www.bharatkalachar.com/38-bharat-kalachar.html",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "bk-2026-12-29-1030-saigovindv",
+  "date": "2026-12-29",
+  "start": "10:30",
+  "end": "",
+  "slot": "Morning",
+  "main_artist": "Sai Govind Vijayaraghavan",
+  "main_instrument": "Mandolin",
+  "concert_type": "Instrumental",
+  "performers": [
+   {
+    "name": "Sai Govind Vijayaraghavan",
+    "instrument": "Mandolin",
+    "role": "main"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "Bharat Kalachar",
+  "festival": "38th Marghazhi Mahotsav",
+  "venue": "Sri YGP Auditorium, No. 17, Thirumalai Road, T. Nagar, Chennai 600017",
+  "area": "T. Nagar",
+  "source_url": "https://www.bharatkalachar.com/38-bharat-kalachar.html",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-29-1145",
+  "date": "2026-12-29",
+  "start": "11:45",
+  "end": "13:15",
+  "slot": "Morning",
+  "main_artist": "R.P.Shravan",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "R.P.Shravan",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "N.Madan Mohan",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "N. Anirudh Raj",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-29-1330",
+  "date": "2026-12-29",
+  "start": "13:30",
+  "end": "15:30",
+  "slot": "Afternoon",
+  "main_artist": "Ananya Ashok",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Ananya Ashok",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "Chaganti Ramya Kiranmayi",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "Ranjani Siddanthi Venkatesh",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "Karthick Krishnaswamy",
+    "instrument": "Ghatam",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "bk-2026-12-29-1400-karthikraj",
+  "date": "2026-12-29",
+  "start": "14:00",
+  "end": "",
+  "slot": "Afternoon",
+  "main_artist": "Karthik Raju (USA)",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Karthik Raju (USA)",
+    "instrument": "Vocal",
+    "role": "main"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "Bharat Kalachar",
+  "festival": "38th Marghazhi Mahotsav",
+  "venue": "Sri YGP Auditorium, No. 17, Thirumalai Road, T. Nagar, Chennai 600017",
+  "area": "T. Nagar",
+  "source_url": "https://www.bharatkalachar.com/38-bharat-kalachar.html",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-29-1600",
+  "date": "2026-12-29",
+  "start": "16:00",
+  "end": "18:30",
+  "slot": "Evening",
+  "main_artist": "J.A.Jayant",
+  "main_instrument": "Flute",
+  "concert_type": "Instrumental",
+  "performers": [
+   {
+    "name": "J.A.Jayant",
+    "instrument": "Flute",
+    "role": "main"
+   },
+   {
+    "name": "L.Ramakrishnan",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "Umayalpuram K.Sivaraman",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "B.S. Purushotham",
+    "instrument": "Kanjira",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Ticketed",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-29-1845",
+  "date": "2026-12-29",
+  "start": "18:45",
+  "end": "21:15",
+  "slot": "Evening",
+  "main_artist": "Vignesh Ishwar",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Vignesh Ishwar",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "M.Rajeev",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "B.Sivaraman",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "N.Guruprasad",
+    "instrument": "Ghatam",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Ticketed",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-30-0900",
+  "date": "2026-12-30",
+  "start": "09:00",
+  "end": "11:30",
+  "slot": "Morning",
+  "main_artist": "Salem Dr. Gayathri Venkatesan",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Salem Dr. Gayathri Venkatesan",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "Anuradha Sridhar",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "Peravali P. Jayabhaskar",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "Nerkunam S. Manikandan",
+    "instrument": "Moharsing",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "bk-2026-12-30-1030-kalyanapur",
+  "date": "2026-12-30",
+  "start": "10:30",
+  "end": "",
+  "slot": "Morning",
+  "main_artist": "Kalyanapuram S Arvind",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Kalyanapuram S Arvind",
+    "instrument": "Vocal",
+    "role": "main"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "Bharat Kalachar",
+  "festival": "38th Marghazhi Mahotsav",
+  "venue": "Sri YGP Auditorium, No. 17, Thirumalai Road, T. Nagar, Chennai 600017",
+  "area": "T. Nagar",
+  "source_url": "https://www.bharatkalachar.com/38-bharat-kalachar.html",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-30-1145",
+  "date": "2026-12-30",
+  "start": "11:45",
+  "end": "13:15",
+  "slot": "Morning",
+  "main_artist": "V Krupaa Lakshmi",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "V Krupaa Lakshmi",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "Thirucherai B. Karthik",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "Sanjay Subramanian",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-30-1330",
+  "date": "2026-12-30",
+  "start": "13:30",
+  "end": "15:30",
+  "slot": "Afternoon",
+  "main_artist": "Archana & Aarathi",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Archana & Aarathi",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "Chidambaram G.Badrinath",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "B.Sai Shankar",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "Sowmya Narayanan",
+    "instrument": "Ghatam",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "bk-2026-12-30-1400-sidhdharth",
+  "date": "2026-12-30",
+  "start": "14:00",
+  "end": "",
+  "slot": "Afternoon",
+  "main_artist": "Sidhdharth Kaushik",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Sidhdharth Kaushik",
+    "instrument": "Vocal",
+    "role": "main"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "Bharat Kalachar",
+  "festival": "38th Marghazhi Mahotsav",
+  "venue": "Sri YGP Auditorium, No. 17, Thirumalai Road, T. Nagar, Chennai 600017",
+  "area": "T. Nagar",
+  "source_url": "https://www.bharatkalachar.com/38-bharat-kalachar.html",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-30-1600",
+  "date": "2026-12-30",
+  "start": "16:00",
+  "end": "18:30",
+  "slot": "Evening",
+  "main_artist": "A.Kanyakumari & B.Vittal Rangan",
+  "main_instrument": "Violin",
+  "concert_type": "Instrumental duet",
+  "performers": [
+   {
+    "name": "A.Kanyakumari & B.Vittal Rangan",
+    "instrument": "Violin Duet",
+    "role": "main"
+   },
+   {
+    "name": "Patri Satishkumar",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "Alathur T.Rajaganesh",
+    "instrument": "Kanjira",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Ticketed",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-30-1845",
+  "date": "2026-12-30",
+  "start": "18:45",
+  "end": "21:15",
+  "slot": "Evening",
+  "main_artist": "K.S. Vishnudev",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "K.S. Vishnudev",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "Trivandrum Dr.N.Sampath",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "Akshay Anand",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "S. Shri Sainath",
+    "instrument": "Ghatam",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Ticketed",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-31-0900",
+  "date": "2026-12-31",
+  "start": "09:00",
+  "end": "11:30",
+  "slot": "Morning",
+  "main_artist": "D.B. Ashvin",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "D.B. Ashvin",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "H.M.Smitha",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "B.S.Prashanth",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "Tirunakkara K.R.Rethish",
+    "instrument": "Moharsing",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-31-1145",
+  "date": "2026-12-31",
+  "start": "11:45",
+  "end": "13:15",
+  "slot": "Morning",
+  "main_artist": "Sidharth Prakash",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Sidharth Prakash",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "M Keshav",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "Sriram Srinivasan",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-31-1330",
+  "date": "2026-12-31",
+  "start": "13:30",
+  "end": "15:30",
+  "slot": "Afternoon",
+  "main_artist": "Anirudh Venkatesh",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Anirudh Venkatesh",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "Madurai M.Vijayaganesh",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "Kishore Ramesh",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "Bharadwaj R Sathavalli",
+    "instrument": "Moharsing",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "bk-2026-12-31-1400-bharadwajs",
+  "date": "2026-12-31",
+  "start": "14:00",
+  "end": "",
+  "slot": "Afternoon",
+  "main_artist": "Bharadwaj Subramaniam",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Bharadwaj Subramaniam",
+    "instrument": "Vocal",
+    "role": "main"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "Bharat Kalachar",
+  "festival": "38th Marghazhi Mahotsav",
+  "venue": "Sri YGP Auditorium, No. 17, Thirumalai Road, T. Nagar, Chennai 600017",
+  "area": "T. Nagar",
+  "source_url": "https://www.bharatkalachar.com/38-bharat-kalachar.html",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-31-1600",
+  "date": "2026-12-31",
+  "start": "16:00",
+  "end": "18:30",
+  "slot": "Evening",
+  "main_artist": "Akkarai Sisters - S.Subhalakshmi & S. Sornalatha",
+  "main_instrument": "Violin",
+  "concert_type": "Instrumental duet",
+  "performers": [
+   {
+    "name": "Akkarai Sisters - S.Subhalakshmi & S. Sornalatha",
+    "instrument": "Violin Duet",
+    "role": "main"
+   },
+   {
+    "name": "Delhi S.Sairam",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "N.Guruprasad",
+    "instrument": "Ghatam",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Ticketed",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "bk-2026-12-31-1630-kunnakudim",
+  "date": "2026-12-31",
+  "start": "16:30",
+  "end": "",
+  "slot": "Evening",
+  "main_artist": "Kunnakudi M Balamuralikrishna",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Kunnakudi M Balamuralikrishna",
+    "instrument": "Vocal",
+    "role": "main"
+   }
+  ],
+  "entry": "Ticketed",
+  "organisation": "Bharat Kalachar",
+  "festival": "38th Marghazhi Mahotsav",
+  "venue": "Sri YGP Auditorium, No. 17, Thirumalai Road, T. Nagar, Chennai 600017",
+  "area": "T. Nagar",
+  "source_url": "https://www.bharatkalachar.com/38-bharat-kalachar.html",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2026-12-31-1845",
+  "date": "2026-12-31",
+  "start": "18:45",
+  "end": "21:15",
+  "slot": "Evening",
+  "main_artist": "Kalyanapuram S.Aravind",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Kalyanapuram S.Aravind",
+    "instrument": "Vocal",
+    "role": "main"
+   },
+   {
+    "name": "Parur M.S.Ananthkrishnan",
+    "instrument": "Violin",
+    "role": "accompanist"
+   },
+   {
+    "name": "R.Akshay Ram",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "Nerkunam Dr.S.Sankar",
+    "instrument": "Kanjira",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Ticketed",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2027-01-01-0915",
+  "date": "2027-01-01",
+  "start": "09:15",
+  "end": "11:45",
+  "slot": "Morning",
+  "main_artist": "Mysore M.Nagaraj & Dr. Mysore Manjunath",
+  "main_instrument": "Violin",
+  "concert_type": "Instrumental duet",
+  "performers": [
+   {
+    "name": "Mysore M.Nagaraj & Dr. Mysore Manjunath",
+    "instrument": "Violin Duet",
+    "role": "main"
+   },
+   {
+    "name": "Thiruvaarur Bakthavathsalam",
+    "instrument": "Mridangam",
+    "role": "accompanist"
+   },
+   {
+    "name": "U.N.Giridhar Udupa",
+    "instrument": "Ghatam",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Not stated",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "as-2027-01-01-0930-sanjaysubr",
+  "date": "2027-01-01",
+  "start": "09:30",
+  "end": "",
+  "slot": "Morning",
+  "main_artist": "Sanjay Subrahmanyan",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Sanjay Subrahmanyan",
+    "instrument": "Vocal",
+    "role": "main"
+   }
+  ],
+  "entry": "Not stated",
+  "organisation": "Brahma Gana Sabha",
+  "festival": "Brahma Gana Sabha December festival",
+  "venue": "Sundareswarar Hall, Rasika Ranjani Sabha",
+  "area": "Mylapore",
+  "source_url": "https://sanjaysub.com/",
+  "source_label": "Artist's website",
+  "note": "Artist's site marks details as awaited.",
+  "fetched": "2026-10-12"
+ },
+ {
+  "id": "bk-2027-01-01-1030-ganeshkuma",
+  "date": "2027-01-01",
+  "start": "10:30",
+  "end": "",
+  "slot": "Morning",
+  "main_artist": "Ganesh Kumaresh",
+  "main_instrument": "Violin",
+  "concert_type": "Instrumental duet",
+  "performers": [
+   {
+    "name": "Ganesh Kumaresh",
+    "instrument": "Violin Duet",
+    "role": "main"
+   }
+  ],
+  "entry": "Ticketed",
+  "organisation": "Bharat Kalachar",
+  "festival": "38th Marghazhi Mahotsav",
+  "venue": "Sri YGP Auditorium, No. 17, Thirumalai Road, T. Nagar, Chennai 600017",
+  "area": "T. Nagar",
+  "source_url": "https://www.bharatkalachar.com/38-bharat-kalachar.html",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "bk-2027-01-01-1400-adiityasri",
+  "date": "2027-01-01",
+  "start": "14:00",
+  "end": "",
+  "slot": "Afternoon",
+  "main_artist": "Adiitya Sridhar",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Adiitya Sridhar",
+    "instrument": "Vocal",
+    "role": "main"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "Bharat Kalachar",
+  "festival": "38th Marghazhi Mahotsav",
+  "venue": "Sri YGP Auditorium, No. 17, Thirumalai Road, T. Nagar, Chennai 600017",
+  "area": "T. Nagar",
+  "source_url": "https://www.bharatkalachar.com/38-bharat-kalachar.html",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "ma-2027-01-01-1545",
+  "date": "2027-01-01",
+  "start": "15:45",
+  "end": "16:45",
+  "slot": "Afternoon",
+  "main_artist": "Thiruvaimur T.R.B. Arulmozhi Karthikeyan & T.N.S. Balachandar",
+  "main_instrument": "Nagaswaram",
+  "concert_type": "Instrumental",
+  "performers": [
+   {
+    "name": "Thiruvaimur T.R.B. Arulmozhi Karthikeyan",
+    "instrument": "Nagaswaram",
+    "role": "main"
+   },
+   {
+    "name": "T.N.S. Balachandar",
+    "instrument": "Nagaswaram",
+    "role": "main"
+   },
+   {
+    "name": "Idumbavanam K.S.K Manikandan",
+    "instrument": "Thavil",
+    "role": "accompanist"
+   },
+   {
+    "name": "Rasipuram R.P Venkatesan",
+    "instrument": "Thavil",
+    "role": "accompanist"
+   }
+  ],
+  "entry": "Not stated",
+  "organisation": "The Music Academy, Madras",
+  "festival": "100th Annual Conference & Concerts",
+  "venue": "Music Academy Auditorium, New No. 168, T.T.K. Road, Chennai 600014",
+  "area": "Alwarpet / TTK Road",
+  "source_url": "https://musicacademymadras.in/100th-annual-concerts-2026/",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "bk-2027-01-01-1730-giridharan",
+  "date": "2027-01-01",
+  "start": "17:30",
+  "end": "",
+  "slot": "Evening",
+  "main_artist": "Giridharan",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Giridharan",
+    "instrument": "Vocal",
+    "role": "main"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "Bharat Kalachar",
+  "festival": "38th Marghazhi Mahotsav",
+  "venue": "Sri YGP Auditorium, No. 17, Thirumalai Road, T. Nagar, Chennai 600017",
+  "area": "T. Nagar",
+  "source_url": "https://www.bharatkalachar.com/38-bharat-kalachar.html",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "bk-2027-01-02-1400-rasikasiva",
+  "date": "2027-01-02",
+  "start": "14:00",
+  "end": "",
+  "slot": "Afternoon",
+  "main_artist": "Rasika Sivakumar (USA)",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Rasika Sivakumar (USA)",
+    "instrument": "Vocal",
+    "role": "main"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "Bharat Kalachar",
+  "festival": "38th Marghazhi Mahotsav",
+  "venue": "Sri YGP Auditorium, No. 17, Thirumalai Road, T. Nagar, Chennai 600017",
+  "area": "T. Nagar",
+  "source_url": "https://www.bharatkalachar.com/38-bharat-kalachar.html",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "bk-2027-01-02-1630-rsuryaprak",
+  "date": "2027-01-02",
+  "start": "16:30",
+  "end": "",
+  "slot": "Evening",
+  "main_artist": "R Suryaprakash",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "R Suryaprakash",
+    "instrument": "Vocal",
+    "role": "main"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "Bharat Kalachar",
+  "festival": "38th Marghazhi Mahotsav",
+  "venue": "Sri YGP Auditorium, No. 17, Thirumalai Road, T. Nagar, Chennai 600017",
+  "area": "T. Nagar",
+  "source_url": "https://www.bharatkalachar.com/38-bharat-kalachar.html",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "bk-2027-01-03-1030-shishirkum",
+  "date": "2027-01-03",
+  "start": "10:30",
+  "end": "",
+  "slot": "Morning",
+  "main_artist": "Shishir Kumar",
+  "main_instrument": "Saxophone",
+  "concert_type": "Instrumental",
+  "performers": [
+   {
+    "name": "Shishir Kumar",
+    "instrument": "Saxophone",
+    "role": "main"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "Bharat Kalachar",
+  "festival": "38th Marghazhi Mahotsav",
+  "venue": "Sri YGP Auditorium, No. 17, Thirumalai Road, T. Nagar, Chennai 600017",
+  "area": "T. Nagar",
+  "source_url": "https://www.bharatkalachar.com/38-bharat-kalachar.html",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "bk-2027-01-03-1400-vishruthii",
+  "date": "2027-01-03",
+  "start": "14:00",
+  "end": "",
+  "slot": "Afternoon",
+  "main_artist": "Vishruthii Girish",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Vishruthii Girish",
+    "instrument": "Vocal",
+    "role": "main"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "Bharat Kalachar",
+  "festival": "38th Marghazhi Mahotsav",
+  "venue": "Sri YGP Auditorium, No. 17, Thirumalai Road, T. Nagar, Chennai 600017",
+  "area": "T. Nagar",
+  "source_url": "https://www.bharatkalachar.com/38-bharat-kalachar.html",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "as-2027-01-03-1700-sjjananiy",
+  "date": "2027-01-03",
+  "start": "17:00",
+  "end": "",
+  "slot": "Evening",
+  "main_artist": "S. J. Jananiy",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "S. J. Jananiy",
+    "instrument": "Vocal",
+    "role": "main"
+   }
+  ],
+  "entry": "Not stated",
+  "organisation": "Organiser not stated",
+  "festival": "—",
+  "venue": "Panigraha",
+  "area": "Not stated",
+  "source_url": "https://www.bandsintown.com/e/108804725-s.-j.-jananiy-at-panigraha",
+  "source_label": "Bandsintown artist listing",
+  "note": "Venue taken from the listing link.",
+  "fetched": "2026-10-12"
+ },
+ {
+  "id": "as-2027-01-03-1830-shashanksu",
+  "date": "2027-01-03",
+  "start": "18:30",
+  "end": "21:00",
+  "slot": "Evening",
+  "main_artist": "Shashank Subramanyam & Abhishek Raghuram",
+  "main_instrument": "Flute",
+  "concert_type": "Instrumental duet",
+  "performers": [
+   {
+    "name": "Shashank Subramanyam",
+    "instrument": "Flute",
+    "role": "main"
+   },
+   {
+    "name": "Abhishek Raghuram",
+    "instrument": "Vocal",
+    "role": "main"
+   }
+  ],
+  "entry": "Not stated",
+  "organisation": "Sri Parthasarathy Swami Sabha",
+  "festival": "Isai Vizha",
+  "venue": "Vidya Bharathi Kalyana Mandapam",
+  "area": "Mylapore",
+  "source_url": "https://www.shashank.org/tours",
+  "source_label": "Artist's website",
+  "note": "Flute and vocal duet; accompanists not listed.",
+  "fetched": "2026-10-12"
+ },
+ {
+  "id": "bk-2027-01-03-1900-ramanabala",
+  "date": "2027-01-03",
+  "start": "19:00",
+  "end": "",
+  "slot": "Evening",
+  "main_artist": "Ramana Balachandran",
+  "main_instrument": "Veena",
+  "concert_type": "Instrumental",
+  "performers": [
+   {
+    "name": "Ramana Balachandran",
+    "instrument": "Veena",
+    "role": "main"
+   }
+  ],
+  "entry": "Ticketed",
+  "organisation": "Bharat Kalachar",
+  "festival": "38th Marghazhi Mahotsav",
+  "venue": "Sri YGP Auditorium, No. 17, Thirumalai Road, T. Nagar, Chennai 600017",
+  "area": "T. Nagar",
+  "source_url": "https://www.bharatkalachar.com/38-bharat-kalachar.html",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "bk-2027-01-09-1030-cotahsiste",
+  "date": "2027-01-09",
+  "start": "10:30",
+  "end": "",
+  "slot": "Morning",
+  "main_artist": "Cotah Sisters",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Cotah Sisters",
+    "instrument": "Vocal",
+    "role": "main"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "Bharat Kalachar",
+  "festival": "38th Marghazhi Mahotsav",
+  "venue": "Sri YGP Auditorium, No. 17, Thirumalai Road, T. Nagar, Chennai 600017",
+  "area": "T. Nagar",
+  "source_url": "https://www.bharatkalachar.com/38-bharat-kalachar.html",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "bk-2027-01-09-1400-jayashreev",
+  "date": "2027-01-09",
+  "start": "14:00",
+  "end": "",
+  "slot": "Afternoon",
+  "main_artist": "Jayashree Vaidyanathan",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Jayashree Vaidyanathan",
+    "instrument": "Vocal",
+    "role": "main"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "Bharat Kalachar",
+  "festival": "38th Marghazhi Mahotsav",
+  "venue": "Sri YGP Auditorium, No. 17, Thirumalai Road, T. Nagar, Chennai 600017",
+  "area": "T. Nagar",
+  "source_url": "https://www.bharatkalachar.com/38-bharat-kalachar.html",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "bk-2027-01-10-1030-charulatha",
+  "date": "2027-01-10",
+  "start": "10:30",
+  "end": "",
+  "slot": "Morning",
+  "main_artist": "Charulatha Chandrasekar",
+  "main_instrument": "Veena",
+  "concert_type": "Instrumental",
+  "performers": [
+   {
+    "name": "Charulatha Chandrasekar",
+    "instrument": "Veena",
+    "role": "main"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "Bharat Kalachar",
+  "festival": "38th Marghazhi Mahotsav",
+  "venue": "Sri YGP Auditorium, No. 17, Thirumalai Road, T. Nagar, Chennai 600017",
+  "area": "T. Nagar",
+  "source_url": "https://www.bharatkalachar.com/38-bharat-kalachar.html",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "bk-2027-01-10-1030-bharathnar",
+  "date": "2027-01-10",
+  "start": "10:30",
+  "end": "",
+  "slot": "Morning",
+  "main_artist": "Bharath Narayanan",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Bharath Narayanan",
+    "instrument": "Vocal",
+    "role": "main"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "Bharat Kalachar",
+  "festival": "38th Marghazhi Mahotsav",
+  "venue": "Sri YGP Auditorium, No. 17, Thirumalai Road, T. Nagar, Chennai 600017",
+  "area": "T. Nagar",
+  "source_url": "https://www.bharatkalachar.com/38-bharat-kalachar.html",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "bk-2027-01-10-1400-vdeepikavn",
+  "date": "2027-01-10",
+  "start": "14:00",
+  "end": "",
+  "slot": "Afternoon",
+  "main_artist": "V Deepika & V Nandhika",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal duet",
+  "performers": [
+   {
+    "name": "V Deepika & V Nandhika",
+    "instrument": "Vocal Duet",
+    "role": "main"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "Bharat Kalachar",
+  "festival": "38th Marghazhi Mahotsav",
+  "venue": "Sri YGP Auditorium, No. 17, Thirumalai Road, T. Nagar, Chennai 600017",
+  "area": "T. Nagar",
+  "source_url": "https://www.bharatkalachar.com/38-bharat-kalachar.html",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "bk-2027-01-10-1630-carnaticab",
+  "date": "2027-01-10",
+  "start": "16:30",
+  "end": "",
+  "slot": "Evening",
+  "main_artist": "Carnatica Brothers",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Carnatica Brothers",
+    "instrument": "Vocal",
+    "role": "main"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "Bharat Kalachar",
+  "festival": "38th Marghazhi Mahotsav",
+  "venue": "Sri YGP Auditorium, No. 17, Thirumalai Road, T. Nagar, Chennai 600017",
+  "area": "T. Nagar",
+  "source_url": "https://www.bharatkalachar.com/38-bharat-kalachar.html",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "bk-2027-01-16-1030-atulkumar",
+  "date": "2027-01-16",
+  "start": "10:30",
+  "end": "",
+  "slot": "Morning",
+  "main_artist": "Atul Kumar",
+  "main_instrument": "Flute",
+  "concert_type": "Instrumental",
+  "performers": [
+   {
+    "name": "Atul Kumar",
+    "instrument": "Flute",
+    "role": "main"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "Bharat Kalachar",
+  "festival": "38th Marghazhi Mahotsav",
+  "venue": "Sri YGP Auditorium, No. 17, Thirumalai Road, T. Nagar, Chennai 600017",
+  "area": "T. Nagar",
+  "source_url": "https://www.bharatkalachar.com/38-bharat-kalachar.html",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "bk-2027-01-16-1400-samhithash",
+  "date": "2027-01-16",
+  "start": "14:00",
+  "end": "",
+  "slot": "Afternoon",
+  "main_artist": "Samhitha Shivram & Shreyas Shivram",
+  "main_instrument": "Mandolin",
+  "concert_type": "Instrumental duet",
+  "performers": [
+   {
+    "name": "Samhitha Shivram & Shreyas Shivram",
+    "instrument": "Mandolin Duet",
+    "role": "main"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "Bharat Kalachar",
+  "festival": "38th Marghazhi Mahotsav",
+  "venue": "Sri YGP Auditorium, No. 17, Thirumalai Road, T. Nagar, Chennai 600017",
+  "area": "T. Nagar",
+  "source_url": "https://www.bharatkalachar.com/38-bharat-kalachar.html",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "bk-2027-01-17-1030-mohansanth",
+  "date": "2027-01-17",
+  "start": "10:30",
+  "end": "",
+  "slot": "Morning",
+  "main_artist": "Mohan Santhanam",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Mohan Santhanam",
+    "instrument": "Vocal",
+    "role": "main"
+   }
+  ],
+  "entry": "Free",
+  "organisation": "Bharat Kalachar",
+  "festival": "38th Marghazhi Mahotsav",
+  "venue": "Sri YGP Auditorium, No. 17, Thirumalai Road, T. Nagar, Chennai 600017",
+  "area": "T. Nagar",
+  "source_url": "https://www.bharatkalachar.com/38-bharat-kalachar.html",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ },
+ {
+  "id": "bk-2027-01-17-1500-samanvitha",
+  "date": "2027-01-17",
+  "start": "15:00",
+  "end": "",
+  "slot": "Afternoon",
+  "main_artist": "Samanvitha Sashidharan",
+  "main_instrument": "Vocal",
+  "concert_type": "Vocal",
+  "performers": [
+   {
+    "name": "Samanvitha Sashidharan",
+    "instrument": "Vocal",
+    "role": "main"
+   }
+  ],
+  "entry": "Not stated",
+  "organisation": "Bharat Kalachar",
+  "festival": "38th Marghazhi Mahotsav",
+  "venue": "Sri YGP Auditorium, No. 17, Thirumalai Road, T. Nagar, Chennai 600017",
+  "area": "T. Nagar",
+  "source_url": "https://www.bharatkalachar.com/38-bharat-kalachar.html",
+  "fetched": "2026-10-12",
+  "source_label": "Organiser's schedule",
+  "note": ""
+ }
+]

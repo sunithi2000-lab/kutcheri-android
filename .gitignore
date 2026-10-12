@@ -1,0 +1,7 @@
+node_modules/
+android/
+www/
+dist/
+tools/_check.js
+*.jks
+*.keystore

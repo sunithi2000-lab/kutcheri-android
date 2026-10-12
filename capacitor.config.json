@@ -1,0 +1,20 @@
+{
+  "appId": "io.github.sunithi2000lab.kutcheri",
+  "appName": "Kutcheri Planner",
+  "webDir": "www",
+  "backgroundColor": "#F6F7F3",
+  "android": {
+    "allowMixedContent": false,
+    "captureInput": false,
+    "webContentsDebuggingEnabled": false
+  },
+  "plugins": {
+    "CapacitorHttp": {
+      "enabled": true
+    },
+    "SystemBars": {
+      "insetsHandling": "css",
+      "style": "DEFAULT"
+    }
+  }
+}

@@ -1,0 +1,468 @@
+<title>Marghazhi Kutcheri Planner</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Atkinson+Hyperlegible:wght@400;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a phone app — sticky top bar with search + date strip, day-grouped concert cards, slide-up filter sheet, bottom tab bar. Desktop shows the same app in a centred column. */
+:root {
+  --bg: #F6F7F3; --surface: #FFFFFF; --ink: #17231F; --muted: #5B6862; --rule: #DCE2DC;
+  --accent: #0E6A57; --accent-ink: #FFFFFF; --accent-soft: #E1EFEA; --gold: #A86B00; --gold-soft: #F6EAD2;
+  --free: #2E6B2E; --free-soft: #E3F0DF; --wait: #6A6F7A; --wait-soft: #ECEDF0; --clash: #B42318;
+  --shade: rgba(16, 24, 20, .45); --outer: #E9ECE6;
+  --font-display: "Rozha One", Georgia, serif;
+  --font-body: "Atkinson Hyperlegible", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-data: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  --app: 560px; --tabh: 62px; --barh: 0px;
+  /* spacing scale: every gap and padding in the cards uses one of these */
+  --s1: 4px; --s2: 8px; --s3: 12px; --s4: 16px;
+  /* fixed time column, sized in rem so it grows with the phone's text size */
+  --timecol: 5.4rem;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0F1513; --surface: #161E1B; --ink: #E8EEEA; --muted: #9AA8A1; --rule: #2A3631;
+  --accent: #5CC4A8; --accent-ink: #0B1210; --accent-soft: #173229; --gold: #E2AE4E; --gold-soft: #33280F;
+  --free: #8FD18A; --free-soft: #1C2D1B; --wait: #A9AEB8; --wait-soft: #252830; --clash: #FF8A80;
+  --shade: rgba(0, 0, 0, .6); --outer: #0A0F0D; color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg: #0F1513; --surface: #161E1B; --ink: #E8EEEA; --muted: #9AA8A1; --rule: #2A3631;
+  --accent: #5CC4A8; --accent-ink: #0B1210; --accent-soft: #173229; --gold: #E2AE4E; --gold-soft: #33280F;
+  --free: #8FD18A; --free-soft: #1C2D1B; --wait: #A9AEB8; --wait-soft: #252830; --clash: #FF8A80;
+  --shade: rgba(0, 0, 0, .6); --outer: #0A0F0D; color-scheme: dark; }
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { background: var(--outer); }
+body { margin: 0; background: var(--outer); color: var(--ink); font-family: var(--font-body); font-size: 15px; line-height: 1.45; -webkit-tap-highlight-color: transparent; }
+a { color: var(--accent); }
+button { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.app { overflow-x: clip; max-width: var(--app); margin: 0 auto; min-height: 100vh; background: var(--bg); padding-bottom: calc(var(--tabh) + env(safe-area-inset-bottom, 0px) + 16px); position: relative; }
+@media (min-width: 600px) { .app { border-inline: 1px solid var(--rule); } }
+
+/* top bar */
+.bar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: var(--bg); padding: 10px 16px 8px; border-bottom: 1px solid var(--rule); display: grid; grid-template-columns: minmax(0, 1fr); gap: 8px; }
+.bar > *, #listbar { min-width: 0; }
+.brand { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; }
+.brand h1 { margin: 0; font-family: var(--font-display); font-weight: 400; font-size: 24px; line-height: 1.1; }
+.brand h1 small { display: block; font-family: var(--font-body); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--gold); font-weight: 700; margin-top: 2px; }
+.brand .cnt { font-size: 12px; color: var(--muted); white-space: nowrap; }
+.brand .cnt b { font-family: var(--font-data); font-weight: 500; color: var(--ink); }
+.srow { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px; }
+.search { display: block; min-width: 0; position: relative; }
+.search input { width: 100%; min-width: 0; -webkit-appearance: none; appearance: none; font: inherit; font-size: 16px; padding: 10px 12px 10px 36px; border-radius: 12px; border: 1px solid var(--rule); background: var(--surface); color: var(--ink); }
+.search svg { position: absolute; left: 11px; top: 50%; transform: translateY(-50%); width: 17px; height: 17px; color: var(--muted); pointer-events: none; }
+.fbtn { flex: 0 0 auto; appearance: none; border: 1px solid var(--rule); background: var(--surface); border-radius: 12px; padding: 0 12px; display: inline-flex; align-items: center; gap: 6px; font-weight: 700; font-size: 14px; cursor: pointer; }
+.fbtn svg { width: 18px; height: 18px; }
+.fbtn .bdg { font-family: var(--font-data); font-size: 11px; background: var(--accent); color: var(--accent-ink); border-radius: 999px; min-width: 18px; padding: 0 5px; text-align: center; }
+.vh { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.qf { display: flex; flex-wrap: wrap; gap: var(--s2); }
+.qf::-webkit-scrollbar { display: none; }
+.qf label { flex: 0 1 auto; min-width: 0; max-width: 100%; }
+.qf select { width: auto; max-width: 100%; text-overflow: ellipsis; font-size: 16px; font-weight: 700; padding: 6px 30px 6px 12px; border-radius: 999px; -webkit-appearance: none; appearance: none;
+  background: var(--surface) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%235B6862' stroke-width='2'/%3E%3C/svg%3E") no-repeat right 11px center / 11px 8px; }
+.qf select.on { border-color: var(--accent); background-color: var(--accent-soft); color: var(--accent); }
+.strip { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; margin-inline: -16px; padding-inline: 16px; scroll-snap-type: x proximity; }
+.strip::-webkit-scrollbar { display: none; }
+.dy { flex: 0 0 auto; scroll-snap-align: start; appearance: none; border: 1px solid var(--rule); background: var(--surface); border-radius: 12px; width: 50px; padding: 5px 0 4px; display: grid; justify-items: center; line-height: 1.1; cursor: pointer; }
+.dy small { font-size: 10px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+.dy b { font-family: var(--font-data); font-weight: 500; font-size: 17px; }
+.dy i { font-style: normal; font-size: 10px; font-family: var(--font-data); color: var(--muted); }
+.dy.mz { border-color: color-mix(in srgb, var(--gold) 55%, var(--rule)); }
+.dy:disabled { opacity: .4; cursor: default; }
+.dy[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.dy[aria-pressed="true"] small, .dy[aria-pressed="true"] i { color: var(--accent-ink); }
+.chips { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; margin-inline: -16px; padding-inline: 16px; }
+.chips:empty { display: none; }
+.chip-f { flex: 0 0 auto; appearance: none; border: 1px solid var(--accent); background: var(--accent-soft); color: var(--accent); border-radius: 999px; padding: 4px 10px; font-size: 13px; font-weight: 700; cursor: pointer; white-space: nowrap; }
+
+/* list */
+main { padding-inline: 16px; }
+.dayh { position: sticky; top: calc(env(safe-area-inset-top, 0px) + var(--barh)); z-index: 10; background: var(--bg); display: flex; align-items: baseline; justify-content: space-between; gap: 8px; padding: 14px 0 6px; border-bottom: 2px solid var(--gold-soft); }
+.dayh h2 { margin: 0; font-family: var(--font-display); font-weight: 400; font-size: 20px; }
+.dayh span { font-size: 12px; color: var(--muted); }
+.dayh .mz { color: var(--gold); font-weight: 700; }
+.kc { display: grid; grid-template-columns: var(--timecol) minmax(0, 1fr) 40px; column-gap: var(--s3); align-items: start; padding: var(--s4) 0; border-bottom: 1px solid var(--rule); }
+.kt { font-family: var(--font-data); font-variant-numeric: tabular-nums; display: grid; gap: var(--s1); padding-top: 2px; }
+.kt b { font-weight: 500; font-size: 15px; line-height: 1.25; white-space: nowrap; }
+.kt small { font-size: 12px; line-height: 1.25; color: var(--muted); white-space: nowrap; }
+.kb { min-width: 0; display: grid; gap: var(--s2); }
+.kb h3 { margin: 0; font-size: 16px; line-height: 1.3; }
+.inst { display: inline-block; font-size: 10.5px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; background: var(--accent-soft); color: var(--accent); border-radius: 999px; padding: 2px var(--s2); margin-left: var(--s2); vertical-align: 2px; white-space: nowrap; }
+.acc { margin: 0; font-size: 13.5px; line-height: 1.6; }
+.ac { display: inline-block; max-width: 100%; margin-right: var(--s3); }
+.ac i { font-style: normal; font-weight: 700; color: var(--accent); }
+.ac i::after { content: ": "; }
+.where { margin: 0; font-size: 13px; color: var(--muted); }
+.where b { color: var(--ink); font-weight: 700; }
+.meta { display: flex; flex-wrap: wrap; gap: var(--s1) var(--s3); align-items: center; font-size: 12.5px; color: var(--muted); }
+.pill { font-size: 11px; font-weight: 700; border-radius: 999px; padding: 2px 8px; white-space: nowrap; }
+.pill.t { background: var(--gold-soft); color: var(--gold); } .pill.fr { background: var(--free-soft); color: var(--free); } .pill.ns { background: var(--wait-soft); color: var(--wait); }
+.nt { margin: 0; font-size: 12.5px; color: var(--muted); font-style: italic; }
+.star { appearance: none; border: 0; background: none; cursor: pointer; font-size: 24px; line-height: 1; width: 40px; height: 40px; border-radius: 12px; color: var(--muted); display: grid; place-items: center; }
+.star[aria-pressed="true"] { color: var(--gold); }
+.star:active { background: var(--gold-soft); }
+mark { background: var(--gold-soft); color: var(--ink); border-radius: 3px; padding: 0 2px; font-weight: 700; }
+.empty { padding: 36px 8px; text-align: center; color: var(--muted); }
+.empty b { color: var(--ink); }
+
+/* bottom tabs */
+.tabs { position: fixed; bottom: 0; left: 50%; transform: translateX(-50%); width: min(100%, var(--app)); z-index: 30; background: var(--surface); border-top: 1px solid var(--rule); display: grid; grid-template-columns: repeat(3, 1fr); padding-bottom: env(safe-area-inset-bottom, 0px); }
+.tab { appearance: none; border: 0; background: none; cursor: pointer; height: var(--tabh); display: grid; justify-items: center; align-content: center; gap: 2px; font-size: 11.5px; font-weight: 700; color: var(--muted); position: relative; }
+.tab svg { width: 22px; height: 22px; }
+.tab[aria-selected="true"] { color: var(--accent); }
+.tab .tb { position: absolute; top: 7px; left: calc(50% + 6px); font-family: var(--font-data); font-size: 10px; background: var(--gold); color: var(--accent-ink); border-radius: 999px; min-width: 17px; padding: 0 4px; text-align: center; }
+.tab .tb:empty, .tab .tb[data-n="0"] { display: none; }
+
+/* sheet */
+.shade { position: fixed; inset: 0; background: var(--shade); z-index: 40; }
+.sheet { position: fixed; bottom: 0; left: 50%; transform: translateX(-50%); width: min(100%, var(--app)); max-height: 88vh; overflow-y: auto; z-index: 41; background: var(--surface); border-radius: 18px 18px 0 0; padding: 8px 16px calc(16px + env(safe-area-inset-bottom, 0px)); display: grid; gap: 16px; }
+@media (prefers-reduced-motion: no-preference) { .sheet:not([hidden]) { animation: up .22s ease-out; } @keyframes up { from { transform: translate(-50%, 30px); opacity: .6; } } }
+.grab { width: 40px; height: 4px; border-radius: 4px; background: var(--rule); justify-self: center; }
+.sh { display: flex; justify-content: space-between; align-items: center; }
+.sh h2 { margin: 0; font-family: var(--font-display); font-weight: 400; font-size: 22px; }
+.lnk { appearance: none; border: 0; background: none; color: var(--accent); font-weight: 700; cursor: pointer; padding: 6px 0; }
+.fg { display: grid; gap: 6px; }
+.fg > span, .fg legend { font-size: 11px; color: var(--muted); letter-spacing: .08em; text-transform: uppercase; font-weight: 700; padding: 0; }
+fieldset.fg { border: 0; margin: 0; padding: 0; }
+.seg { display: flex; gap: 6px; flex-wrap: wrap; }
+.seg label { flex: 1 1 auto; min-width: 0; }
+.seg input { position: absolute; opacity: 0; pointer-events: none; }
+.seg span { display: block; text-align: center; border: 1px solid var(--rule); border-radius: 10px; padding: 8px 6px; font-size: 13px; font-weight: 700; cursor: pointer; }
+.seg input:checked + span { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.seg input:focus-visible + span { outline: 2px solid var(--accent); outline-offset: 2px; }
+select { font: inherit; font-size: 16px; padding: 10px 12px; border-radius: 10px; border: 1px solid var(--rule); background: var(--surface); color: var(--ink); width: 100%; }
+.hint { margin: 0; font-size: 13px; color: var(--muted); }
+.months { display: grid; gap: 14px; }
+.month h3 { margin: 0 0 6px; font-family: var(--font-display); font-weight: 400; font-size: 18px; }
+.grid7 { display: grid; grid-template-columns: repeat(7, 1fr); gap: 3px; }
+.wdh { font-size: 10px; text-transform: uppercase; color: var(--muted); text-align: center; }
+.cd { appearance: none; border: 1px solid transparent; background: none; border-radius: 9px; aspect-ratio: 1 / 1; max-width: 100%; display: grid; place-items: center; align-content: center; padding: 0; line-height: 1.05; cursor: pointer; }
+.cd b { font-family: var(--font-data); font-weight: 500; font-size: 14px; }
+.cd i { font-style: normal; font-size: 9.5px; color: var(--muted); font-family: var(--font-data); min-height: 10px; }
+.cd.mz { border-color: color-mix(in srgb, var(--gold) 50%, transparent); }
+.cd:disabled { opacity: .35; cursor: default; }
+.cd[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.cd[aria-pressed="true"] i { color: var(--accent-ink); }
+.calkey { font-size: 12px; color: var(--muted); display: flex; gap: 14px; flex-wrap: wrap; }
+.kd { display: inline-block; width: 10px; height: 10px; border-radius: 3px; border: 1px solid var(--gold); margin-right: 5px; vertical-align: -1px; }
+.sfoot { position: sticky; bottom: calc(-16px - env(safe-area-inset-bottom, 0px)); background: var(--surface); padding-top: 8px; display: grid; }
+.primary { appearance: none; border: 0; background: var(--accent); color: var(--accent-ink); font-weight: 700; font-size: 16px; border-radius: 12px; padding: 13px; cursor: pointer; }
+
+/* favourites */
+.intro { margin: 14px 0 0; font-size: 13px; color: var(--muted); }
+.plan { padding-top: 6px; }
+.maplink { display: inline-block; margin: 8px 0 2px; font-size: 13px; font-weight: 700; text-decoration: none; border: 1px solid var(--accent); border-radius: 999px; padding: 6px 12px; }
+.leg { margin-left: 24px; border-left: 2px dashed var(--rule); padding: 6px 0 6px 14px; font-size: 13px; display: grid; gap: 2px; }
+.leg .lv { font-weight: 700; }
+.leg.ok .lv { color: var(--free); } .leg.tight .lv { color: var(--gold); } .leg.clash .lv { color: var(--clash); }
+.leg .sub { color: var(--muted); }
+
+/* sabhas */
+.og { margin-top: 16px; }
+.og h2 { margin: 0 0 4px; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--gold); }
+.org { padding: 12px 0; border-bottom: 1px solid var(--rule); display: grid; gap: 4px; }
+.org .oh { display: flex; justify-content: space-between; gap: 10px; align-items: start; }
+.org h3 { margin: 0; font-size: 15.5px; }
+.org p { margin: 0; font-size: 13px; color: var(--muted); }
+.st { font-size: 11px; font-weight: 700; border-radius: 999px; padding: 2px 8px; white-space: nowrap; }
+.st.pub { background: var(--accent-soft); color: var(--accent); } .st.ann { background: var(--gold-soft); color: var(--gold); } .st.aw { background: var(--wait-soft); color: var(--wait); }
+.oa { display: flex; gap: 14px; flex-wrap: wrap; font-size: 13px; font-weight: 700; }
+.oa button { appearance: none; border: 0; background: none; color: var(--accent); padding: 0; cursor: pointer; font-weight: 700; text-decoration: underline; }
+.about { margin-top: 22px; padding: 14px; border-radius: 12px; background: var(--surface); border: 1px solid var(--rule); font-size: 13px; color: var(--muted); display: grid; gap: 6px; }
+.about b { color: var(--ink); }
+</style>
+
+<div class="app">
+  <header class="bar" id="bar">
+    <div class="brand">
+      <h1>Marghazhi Kutcheri Planner<small>Chennai · 2026–27 · Carnatic</small></h1>
+      <span class="cnt" id="count"></span>
+    </div>
+    <div id="listbar">
+      <div class="srow">
+        <label class="search"><span class="vh">Search artist or accompanist</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <input id="q" type="search" placeholder="Artist or accompanist" autocomplete="off" enterkeyhint="search">
+        </label>
+        <button type="button" class="fbtn" id="openf" aria-haspopup="dialog" aria-controls="sheet">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="3"/><path d="M3 9h18M8 2v4M16 2v4"/></svg>Calendar<span class="bdg" id="fcount" hidden></span>
+        </button>
+      </div>
+      <div class="qf" style="margin-top:8px">
+        <label><span class="vh">Concert type</span><select id="type"></select></label>
+        <label><span class="vh">Location</span><select id="area"></select></label>
+        <label><span class="vh">Sabha or organisation</span><select id="org"></select></label>
+      </div>
+      <div class="strip" id="strip" aria-label="Pick dates" style="margin-top:8px"></div>
+      <div class="chips" id="chips" style="margin-top:8px"></div>
+    </div>
+  </header>
+
+  <main>
+    <section id="v-list"><div id="list"></div></section>
+    <section id="v-fav" hidden><div id="fav"></div></section>
+    <section id="v-orgs" hidden><div id="orgs"></div>
+      <div class="about">
+        <span><b>About this list.</b> Collected from organisers' published 2026–27 schedules and from artists' own websites. Updated every morning. Last data: <span id="fetched"></span>.</span>
+        <span>Some listings give only the main artist or no end time. Programmes can change, so check the source link before you go.</span>
+        <span>Your favourites are saved on this phone or browser only.</span>
+      </div>
+    </section>
+  </main>
+
+  <nav class="tabs" role="tablist" aria-label="Sections">
+    <button class="tab" role="tab" id="t-list" aria-selected="true" aria-controls="v-list" data-v="list">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="3"/><path d="M3 9h18M8 2v4M16 2v4"/></svg>Concerts</button>
+    <button class="tab" role="tab" id="t-fav" aria-selected="false" aria-controls="v-fav" data-v="fav">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg>My plan<span class="tb" id="favn"></span></button>
+    <button class="tab" role="tab" id="t-orgs" aria-selected="false" aria-controls="v-orgs" data-v="orgs">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 21h18M5 21V10l7-5 7 5v11M9 21v-6h6v6"/></svg>Sabhas</button>
+  </nav>
+
+  <div class="shade" id="shade" hidden></div>
+  <div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title" hidden>
+    <div class="grab" aria-hidden="true"></div>
+    <div class="sh"><h2 id="sheet-title">Pick dates</h2><button type="button" class="lnk" id="cal-clear">Clear dates</button></div>
+    <div class="fg"><p class="hint">Tap one or more days. Small numbers show how many concerts are on that day.</p>
+      <div class="months" id="months"></div>
+      <div class="calkey"><span><i class="kd"></i>Margazhi month (16 Dec – 14 Jan)</span></div>
+    </div>
+    <fieldset class="fg"><legend>Search names in</legend>
+      <div class="seg">
+        <label><input type="radio" name="scope" id="scope-all" value="all" checked><span>All artists</span></label>
+        <label><input type="radio" name="scope" id="scope-main" value="main"><span>Main only</span></label>
+        <label><input type="radio" name="scope" id="scope-acc" value="acc"><span>Accompanists</span></label>
+      </div>
+    </fieldset>
+    <button type="button" class="lnk" id="clear" style="justify-self:start">Clear all filters</button>
+    <div class="sfoot"><button type="button" class="primary" id="done">Show concerts</button></div>
+  </div>
+</div>
+
+<script>
+const CONCERTS = /*__CONCERTS__*/[];
+const ORGS = /*__ORGS__*/[];
+const $ = s => document.querySelector(s);
+const MON = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"], WD = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+const MONL = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+const pd = d => { const [y,m,dd] = d.split("-").map(Number); return new Date(Date.UTC(y, m-1, dd)); };
+const fmtD = d => { const x = pd(d); return `${x.getUTCDate()} ${MON[x.getUTCMonth()]} ${x.getUTCFullYear()}`; };
+const fmtS = d => { const x = pd(d); return `${x.getUTCDate()} ${MON[x.getUTCMonth()]}`; };
+const wd = d => WD[pd(d).getUTCDay()];
+const t12 = s => { if (!s) return ""; let [h,m] = s.split(":").map(Number); const ap = h >= 12 ? "pm" : "am"; h = h % 12 || 12; return `${h}:${String(m).padStart(2,"0")} ${ap}`; };
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const norm = s => s.toLowerCase().normalize("NFKD").replace(/[^a-z0-9 ]/g, " ").replace(/\s+/g, " ").trim();
+const ek = e => e.startsWith("Free") ? "fr" : e.startsWith("Ticketed") ? "t" : "ns";
+const accs = c => c.performers.filter(p => p.role === "accompanist");
+const store = { get(k, d) { try { const v = localStorage.getItem(k); return v == null ? d : JSON.parse(v); } catch (e) { return d; } },
+                set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} } };
+CONCERTS.forEach(c => {
+  c._main = norm([c.main_artist, ...c.performers.filter(p => p.role === "main").map(p => p.name)].join(" "));
+  c._acc = norm(accs(c).map(p => p.name).join(" "));
+});
+CONCERTS.sort((a, b) => (a.date + a.start).localeCompare(b.date + b.start));
+
+// ---- state
+const F = Object.assign({ q: "", scope: "all", type: "", area: "", org: "" }, store.get("mk-f", {}));
+let selDates = new Set(store.get("mk-dates", []));
+let favs = new Set(store.get("mcl-favs", []));
+let words = [];
+const hl = name => { const n = norm(name); return words.length && words.every(w => n.includes(w)) ? `<mark>${esc(name)}</mark>` : esc(name); };
+const instName = i => i === "Moharsing" ? "Morsing" : i;
+const accList = c => accs(c).map(p => `<span class="ac"><i>${esc(instName(p.instrument))}</i>${hl(p.name)}</span>`).join("");
+const srcLabel = c => !c.source_label || c.source_label === "Organiser's schedule" ? "Schedule" : c.source_label;
+const pill = c => `<span class="pill ${ek(c.entry)}">${esc(ek(c.entry) === "ns" ? "Entry not stated" : ek(c.entry) === "fr" ? "Free" : c.entry)}</span>`;
+const starBtn = c => { const on = favs.has(c.id);
+  return `<button type="button" class="star" data-id="${esc(c.id)}" aria-pressed="${on}" aria-label="${on ? "Remove from" : "Add to"} my plan: ${esc(c.main_artist)}, ${fmtS(c.date)}">${on ? "★" : "☆"}</button>`; };
+const venueShort = c => c.venue.split(",")[0];
+const isMarg = d => d >= "2026-12-16" && d <= "2027-01-14";
+
+// ---- selects
+const perOrg = {}; CONCERTS.forEach(c => perOrg[c.organisation] = (perOrg[c.organisation] || 0) + 1);
+{
+  const perType = {}; CONCERTS.forEach(c => perType[c.main_instrument] = (perType[c.main_instrument] || 0) + 1);
+  const types = Object.keys(perType).sort((a, b) => a === "Vocal" ? -1 : b === "Vocal" ? 1 : perType[b] - perType[a] || a.localeCompare(b));
+  $("#type").innerHTML = `<option value="">All types</option>` + types.map(t => `<option value="${esc(t)}">${esc(t)} (${perType[t]})</option>`).join("");
+  const areas = [...new Set(CONCERTS.map(c => c.area))].sort();
+  $("#area").innerHTML = `<option value="">All areas</option>` + areas.map(a => `<option value="${esc(a)}">${esc(a)}</option>`).join("");
+  const groups = [["Concerts listed", o => perOrg[o.name]], ["Dates announced", o => !perOrg[o.name] && o.status === "Dates announced"], ["No 2026–27 schedule yet", o => !perOrg[o.name] && o.status !== "Dates announced"]];
+  $("#org").innerHTML = `<option value="">All sabhas (${ORGS.length})</option>` + groups.map(([l, f]) => { const list = ORGS.filter(f).sort((a, b) => a.name.localeCompare(b.name));
+    return list.length ? `<optgroup label="${esc(l)}">${list.map(o => `<option value="${esc(o.name)}">${esc(o.name)}${perOrg[o.name] ? ` (${perOrg[o.name]})` : ""}</option>`).join("")}</optgroup>` : ""; }).join("");
+}
+["type", "area", "org"].forEach(id => { const el = $("#" + id); if ([...el.options].some(o => o.value === F[id])) el.value = F[id]; else F[id] = "";
+  el.addEventListener("change", () => { F[id] = el.value; render(); }); });
+document.querySelectorAll('input[name="scope"]').forEach(r => { r.checked = r.value === F.scope; r.addEventListener("change", () => { F.scope = r.value; render(); }); });
+const q = $("#q"); q.value = F.q; q.addEventListener("input", () => { F.q = q.value; render(); });
+q.addEventListener("keydown", e => { if (e.key === "Enter") q.blur(); });
+
+// ---- dates
+const allDays = []; { const ds = CONCERTS.map(c => c.date);
+  for (let d = pd(ds[0]); d <= pd(ds[ds.length - 1]); d.setUTCDate(d.getUTCDate() + 1)) allDays.push(d.toISOString().slice(0, 10)); }
+const months = [...new Set(allDays.map(d => d.slice(0, 7)))];
+const toggleDate = d => { selDates.has(d) ? selDates.delete(d) : selDates.add(d); render(); };
+$("#strip").addEventListener("click", e => { const b = e.target.closest(".dy"); if (b && !b.disabled) toggleDate(b.dataset.d); });
+$("#months").addEventListener("click", e => { const b = e.target.closest(".cd"); if (b && !b.disabled) toggleDate(b.dataset.d); });
+$("#cal-clear").addEventListener("click", () => { selDates.clear(); render(); });
+
+function matchOthers(c) {
+  const hay = F.scope === "main" ? c._main : F.scope === "acc" ? c._acc : c._main + " " + c._acc;
+  return (!F.type || c.main_instrument === F.type) && (!F.area || c.area === F.area) && (!F.org || c.organisation === F.org) && words.every(w => hay.includes(w));
+}
+
+function renderDates(counts) {
+  $("#strip").innerHTML = allDays.map(d => { const x = pd(d), n = counts[d] || 0, on = selDates.has(d);
+    return `<button type="button" class="dy${isMarg(d) ? " mz" : ""}" data-d="${d}" aria-pressed="${on}" ${!n && !on ? "disabled" : ""} aria-label="${wd(d)} ${fmtS(d)}, ${n} concerts"><small>${wd(d)}</small><b>${x.getUTCDate()}</b><i>${MON[x.getUTCMonth()]}·${n}</i></button>`; }).join("");
+  $("#months").innerHTML = months.map(ym => { const [y, m] = ym.split("-").map(Number), first = new Date(Date.UTC(y, m - 1, 1)).getUTCDay(), n = new Date(Date.UTC(y, m, 0)).getUTCDate();
+    let cells = WD.map(w => `<span class="wdh">${w.slice(0, 2)}</span>`).join("") + "<span></span>".repeat(first);
+    for (let d = 1; d <= n; d++) { const k = `${ym}-${String(d).padStart(2, "0")}`, c = counts[k] || 0, on = selDates.has(k);
+      cells += `<button type="button" class="cd${isMarg(k) ? " mz" : ""}" data-d="${k}" aria-pressed="${on}" ${!c && !on ? "disabled" : ""} aria-label="${d} ${MON[m - 1]}, ${c} concerts"><b>${d}</b><i>${c || ""}</i></button>`; }
+    return `<div class="month"><h3>${MONL[m - 1]} ${y}</h3><div class="grid7">${cells}</div></div>`; }).join("");
+}
+
+function renderChips() {
+  const chips = [...selDates].sort().map(d => [`d:${d}`, `${wd(d)} ${fmtS(d)}`]);
+  if (F.scope !== "all") chips.push(["scope", F.scope === "main" ? "Main artists only" : "Accompanists only"]);
+  ["type", "area", "org"].forEach(id => $("#" + id).classList.toggle("on", !!F[id]));
+  $("#chips").innerHTML = chips.map(([k, l]) => `<button type="button" class="chip-f" data-k="${esc(k)}" aria-label="Remove filter ${esc(l)}">${esc(l)} ✕</button>`).join("");
+  const n = chips.length; $("#fcount").hidden = !n; $("#fcount").textContent = n;
+}
+$("#chips").addEventListener("click", e => { const b = e.target.closest(".chip-f"); if (!b) return; const k = b.dataset.k;
+  if (k.startsWith("d:")) selDates.delete(k.slice(2)); else if (k === "scope") { F.scope = "all"; $("#scope-all").checked = true; } else { F[k] = ""; $("#" + k).value = ""; }
+  render(); });
+
+function card(c) {
+  return `<article class="kc">
+    <div class="kt"><b>${t12(c.start)}</b>${c.end ? `<small>to ${t12(c.end)}</small>` : ""}</div>
+    <div class="kb">
+      <h3>${hl(c.main_artist)}<span class="inst">${esc(c.main_instrument)}</span></h3>
+      ${accs(c).length ? `<p class="acc">${accList(c)}</p>` : ""}
+      <p class="where"><b>${esc(venueShort(c))}</b>${c.area && c.area !== "Not stated" ? ` · ${esc(c.area)}` : ""}</p>
+      <div class="meta">${pill(c)}<span>${esc(c.organisation)}</span><a href="${esc(c.source_url)}" target="_blank" rel="noopener">${esc(srcLabel(c))}</a></div>
+      ${c.note ? `<p class="nt">${esc(c.note)}</p>` : ""}
+    </div>
+    ${starBtn(c)}
+  </article>`;
+}
+
+let current = [];
+function render() {
+  store.set("mk-f", F); store.set("mk-dates", [...selDates]);
+  words = norm(F.q).split(" ").filter(Boolean);
+  const others = CONCERTS.filter(matchOthers);
+  const counts = {}; others.forEach(c => counts[c.date] = (counts[c.date] || 0) + 1);
+  renderDates(counts); renderChips();
+  current = others.filter(c => !selDates.size || selDates.has(c.date));
+  $("#count").innerHTML = `<b>${current.length}</b> of ${CONCERTS.length}`;
+  $("#done").textContent = current.length ? `Show ${current.length} concert${current.length > 1 ? "s" : ""}` : "No concerts match";
+  if (!current.length) {
+    const o = ORGS.find(x => x.name === F.org);
+    let msg = "No published concerts match. Try other dates or clear the filters.";
+    if (o && !perOrg[o.name]) msg = `<b>${esc(o.name)}</b> hasn't published its 2026–27 concerts yet.` + (o.festival_2026 ? `<br>Announced: ${esc(o.festival_2026)}` : "") +
+      (o.url ? `<br><a href="${esc(o.url)}" target="_blank" rel="noopener">Check their website</a>` : "") + `<br>Most sabhas publish between mid-November and early December.`;
+    $("#list").innerHTML = `<p class="empty">${msg}</p>`; return;
+  }
+  const byDay = {}; current.forEach(c => (byDay[c.date] = byDay[c.date] || []).push(c));
+  $("#list").innerHTML = Object.keys(byDay).map(d => `<section><div class="dayh"><h2>${wd(d)} ${fmtS(d)}</h2><span>${byDay[d].length} concert${byDay[d].length > 1 ? "s" : ""}${isMarg(d) ? ' · <span class="mz">Margazhi</span>' : ""}</span></div>${byDay[d].map(card).join("")}</section>`).join("");
+}
+
+// ---- filter sheet
+let lastFocus = null;
+const openSheet = () => { lastFocus = document.activeElement; $("#sheet").hidden = false; $("#shade").hidden = false; document.body.style.overflow = "hidden"; $("#sheet").querySelector("input,select,button").focus(); };
+const closeSheet = () => { $("#sheet").hidden = true; $("#shade").hidden = true; document.body.style.overflow = ""; (lastFocus || $("#openf")).focus(); };
+$("#openf").addEventListener("click", openSheet);
+$("#done").addEventListener("click", () => { closeSheet(); window.scrollTo(0, 0); });
+$("#shade").addEventListener("click", closeSheet);
+document.addEventListener("keydown", e => { if (e.key === "Escape" && !$("#sheet").hidden) closeSheet(); });
+$("#clear").addEventListener("click", () => { Object.assign(F, { q: "", scope: "all", type: "", area: "", org: "" }); selDates.clear(); q.value = "";
+  ["type", "area", "org"].forEach(id => $("#" + id).value = ""); $("#scope-all").checked = true; render(); });
+
+// ---- journey planning
+const VENUES = [
+  [/music academy/i, "The Music Academy, TTK Road", 13.0446, 80.2565],
+  [/ygp/i, "Sri YGP Auditorium, T. Nagar", 13.0430, 80.2392],
+  [/rasika ranjani|sundareswarar/i, "Rasika Ranjani Sabha, Mylapore", 13.0337, 80.2697],
+  [/vani mahal|thyaga brahma/i, "Vani Mahal, G.N. Road, T. Nagar", 13.0412, 80.2384],
+  [/muthamizh/i, "Muthamizh Peravai, R.A. Puram", 13.0280, 80.2580],
+  [/asian college of journalism/i, "Asian College of Journalism, Taramani", 12.9860, 80.2440],
+  [/bharatiya vidya bhavan/i, "Bharatiya Vidya Bhavan, Mylapore", 13.0339, 80.2702],
+  [/narada gana sabha/i, "Narada Gana Sabha, TTK Road", 13.0399, 80.2531],
+  [/krishna gana sabha/i, "Sri Krishna Gana Sabha, T. Nagar", 13.0378, 80.2347],
+  [/ganapathy sachchidananda/i, "Sri Ganapathy Sachchidananda Ashram, Velachery", 12.9785, 80.2210],
+  [/vidya bharathi/i, "Vidya Bharathi Kalyana Mandapam, Mylapore", 13.0362, 80.2650],
+];
+const venueOf = c => { const v = VENUES.find(([r]) => r.test(c.venue));
+  return v ? { name: v[1], lat: v[2], lng: v[3] } : { name: [c.venue, c.area !== "Not stated" ? c.area : ""].filter(Boolean).join(", "), lat: null, lng: null }; };
+const mins = s => { const [h, m] = s.split(":").map(Number); return h * 60 + m; };
+const hm = n => { const h = Math.floor(n / 60), m = n % 60; return h ? `${h} h${m ? ` ${m} min` : ""}` : `${m} min`; };
+const km = (a, b) => { const R = 6371, r = x => x * Math.PI / 180, dLa = r(b.lat - a.lat), dLo = r(b.lng - a.lng);
+  return 2 * R * Math.asin(Math.sqrt(Math.sin(dLa / 2) ** 2 + Math.cos(r(a.lat)) * Math.cos(r(b.lat)) * Math.sin(dLo / 2) ** 2)); };
+const mq = v => encodeURIComponent(v.name + ", Chennai");
+const dirUrl = stops => { const s = stops.filter((v, i) => i === 0 || v.name !== stops[i - 1].name);
+  let u = `https://www.google.com/maps/dir/?api=1&travelmode=driving&origin=${mq(s[0])}&destination=${mq(s[s.length - 1])}`;
+  if (s.length > 2) u += `&waypoints=${s.slice(1, -1).map(mq).join("%7C")}`; return u; };
+function leg(a, b) {
+  const va = venueOf(a), vb = venueOf(b), endA = a.end ? mins(a.end) : mins(a.start) + 120, gap = mins(b.start) - endA;
+  let travel = "", lo = 0, hi = 0;
+  if (va.name === vb.name) travel = "Same venue, no travel";
+  else if (va.lat != null && vb.lat != null) { const d = km(va, vb) * 1.35; lo = Math.max(5, Math.round(d / 22 * 60)); hi = Math.max(10, Math.round(d / 13 * 60)); travel = `≈ ${d.toFixed(1)} km · about ${lo}–${hi} min by car or auto`; }
+  else travel = "Travel time unknown for this venue";
+  let cls = "ok", verdict;
+  if (gap < 0) { cls = "clash"; verdict = `Clash: overlaps by ${hm(-gap)}`; }
+  else if (gap < hi) { cls = "tight"; verdict = `Tight: ${hm(gap)} between concerts`; }
+  else verdict = va.name === vb.name ? `${hm(gap)} break` : `${hm(gap)} between concerts, enough time`;
+  const link = va.name !== vb.name ? ` · <a href="https://www.google.com/maps/dir/?api=1&travelmode=driving&origin=${mq(va)}&destination=${mq(vb)}" target="_blank" rel="noopener">Directions</a>` : "";
+  return `<div class="leg ${cls}"><span class="lv">${esc(verdict)}</span><span class="sub">${esc(travel)}${link}</span>${a.end ? "" : `<span class="sub">End time not published; 2 hours assumed.</span>`}</div>`;
+}
+function renderFav() {
+  const list = CONCERTS.filter(c => favs.has(c.id));
+  if (!list.length) { $("#fav").innerHTML = `<p class="empty"><b>Your plan is empty.</b><br>Tap ☆ on any concert to add it. Your concerts will appear here day by day, with travel time between venues and a route for each day.</p>`; return; }
+  const byDay = {}; list.forEach(c => (byDay[c.date] = byDay[c.date] || []).push(c));
+  const days = Object.keys(byDay);
+  const clashes = days.reduce((n, d) => n + byDay[d].slice(1).filter((c, i) => { const p = byDay[d][i]; return mins(c.start) < (p.end ? mins(p.end) : mins(p.start) + 120); }).length, 0);
+  $("#fav").innerHTML = `<p class="intro">${list.length} concert${list.length > 1 ? "s" : ""} over ${days.length} day${days.length > 1 ? "s" : ""}${clashes ? ` · <b style="color:var(--clash)">${clashes} clash${clashes > 1 ? "es" : ""}</b>` : ""}. Travel times are rough estimates; check the live route before you leave.</p>` +
+    days.map(d => { const cs = byDay[d], vs = cs.map(venueOf), distinct = new Set(vs.map(v => v.name)).size;
+      return `<section class="plan"><div class="dayh"><h2>${wd(d)} ${fmtS(d)}</h2><span>${cs.length} concert${cs.length > 1 ? "s" : ""}${distinct > 1 ? ` · ${distinct} venues` : ""}</span></div>
+        <a class="maplink" href="${distinct > 1 ? dirUrl(vs) : `https://www.google.com/maps/search/?api=1&query=${mq(vs[0])}`}" target="_blank" rel="noopener">${distinct > 1 ? "Route for the day in Google Maps" : "Venue on map"}</a>
+        ${cs.map((c, i) => (i ? leg(cs[i - 1], c) : "") + card(c)).join("")}</section>`; }).join("");
+}
+
+// ---- sabhas
+function renderOrgs() {
+  const cls = o => perOrg[o.name] ? "pub" : o.status === "Dates announced" ? "ann" : "aw";
+  const label = o => perOrg[o.name] ? `${perOrg[o.name]} concert${perOrg[o.name] > 1 ? "s" : ""}` : o.status === "Dates announced" ? "Dates announced" : "Not published yet";
+  const groups = [["Concerts listed", o => perOrg[o.name]], ["Dates announced", o => !perOrg[o.name] && o.status === "Dates announced"], ["Not published yet", o => !perOrg[o.name] && o.status !== "Dates announced"]];
+  $("#orgs").innerHTML = groups.map(([g, f]) => { const list = ORGS.filter(f).sort((a, b) => (perOrg[b.name] || 0) - (perOrg[a.name] || 0) || a.name.localeCompare(b.name));
+    return list.length ? `<section class="og"><h2>${esc(g)} (${list.length})</h2>${list.map(o => `<div class="org">
+      <div class="oh"><h3>${esc(o.name)}</h3><span class="st ${cls(o)}">${esc(label(o))}</span></div>
+      ${o.festival_2026 ? `<p>${esc(o.festival_2026)}</p>` : ""}
+      ${o.venue || o.area ? `<p>${esc([o.venue, o.area].filter(Boolean).join(" · "))}</p>` : ""}
+      ${o.note ? `<p>${esc(o.note)}</p>` : ""}
+      ${perOrg[o.name] || o.url ? `<div class="oa">${perOrg[o.name] ? `<button type="button" data-org="${esc(o.name)}">See concerts</button>` : ""}${o.url ? `<a href="${esc(o.url)}" target="_blank" rel="noopener">Website</a>` : ""}</div>` : ""}
+    </div>`).join("")}</section>` : ""; }).join("");
+}
+$("#orgs").addEventListener("click", e => { const b = e.target.closest("[data-org]"); if (!b) return;
+  F.org = b.dataset.org; $("#org").value = F.org; selDates.clear(); render(); setView("list"); window.scrollTo(0, 0); });
+
+// ---- tabs, favourites, layout
+let view = "list";
+function setView(v) { view = v;
+  document.querySelectorAll(".tab").forEach(t => t.setAttribute("aria-selected", t.dataset.v === v));
+  $("#v-list").hidden = v !== "list"; $("#v-fav").hidden = v !== "fav"; $("#v-orgs").hidden = v !== "orgs"; $("#listbar").hidden = v !== "list";
+  if (v === "fav") renderFav(); if (v === "orgs") renderOrgs();
+  setBarH(); window.scrollTo(0, 0); }
+document.querySelectorAll(".tab").forEach(t => t.addEventListener("click", () => setView(t.dataset.v)));
+const updateFavCount = () => { const n = favs.size; $("#favn").textContent = n || ""; $("#favn").dataset.n = n; };
+document.addEventListener("click", e => {
+  const b = e.target.closest(".star"); if (!b) return;
+  const id = b.dataset.id; favs.has(id) ? favs.delete(id) : favs.add(id); store.set("mcl-favs", [...favs]); updateFavCount();
+  const c = CONCERTS.find(x => x.id === id), on = favs.has(id);
+  document.querySelectorAll(`.star[data-id="${CSS.escape(id)}"]`).forEach(s => { s.setAttribute("aria-pressed", on); s.textContent = on ? "★" : "☆";
+    s.setAttribute("aria-label", `${on ? "Remove from" : "Add to"} my plan: ${c.main_artist}, ${fmtS(c.date)}`); });
+  if (view === "fav") renderFav();
+});
+function setBarH() { document.documentElement.style.setProperty("--barh", $("#bar").offsetHeight + "px"); }
+try { new ResizeObserver(setBarH).observe($("#bar")); } catch (e) { window.addEventListener("resize", setBarH); }
+$("#fetched").textContent = CONCERTS[0] ? fmtD(CONCERTS[0].fetched) : "";
+updateFavCount();
+render();
+setView(location.hash === "#plan" || location.hash === "#favourites" ? "fav" : location.hash === "#sabhas" ? "orgs" : "list");
+</script>
