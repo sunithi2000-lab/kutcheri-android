@@ -93,8 +93,6 @@ for side in ("top", "bottom"):
 
 # 3. phones with large text: only the date strip stays pinned; title, search and filters scroll away
 APP_CSS = """
-/* app: time column grows with the phone text size (em follows Android font scaling; rem does not) */
-.kc { grid-template-columns: 6.4em minmax(0, 1fr) 40px; }
 /* app: pin only the bottom of the top bar (the date strip); the rest scrolls away */
 .bar { top: calc(var(--safe-area-inset-top, env(safe-area-inset-top, 0px)) + var(--keep, var(--barh)) - var(--barh)); }
 .dayh { top: calc(var(--safe-area-inset-top, env(safe-area-inset-top, 0px)) + var(--keep, var(--barh))); }
@@ -109,6 +107,21 @@ function setKeep() {
   const keep = strip && strip.offsetParent ? Math.ceil(bar.getBoundingClientRect().bottom - strip.getBoundingClientRect().top) + 4 : bar.offsetHeight;
   document.documentElement.style.setProperty("--keep", Math.min(keep, bar.offsetHeight) + "px");
 }
+// ---- app: size the time column from the real rendered width of the longest times, so it fits
+// whatever text size the phone uses (Android scales text, not CSS lengths)
+function setTimeCol() {
+  const m = document.createElement("div");
+  m.className = "kt"; m.setAttribute("aria-hidden", "true");
+  m.style.cssText = "position:absolute;visibility:hidden;left:-9999px;top:0;width:auto";
+  m.innerHTML = "<b>12:45 pm</b><small>to 12:45 pm</small>";
+  document.body.appendChild(m);
+  const w = Math.max(...[...m.children].map(e => e.getBoundingClientRect().width));
+  m.remove();
+  if (w > 0) document.documentElement.style.setProperty("--timecol", Math.ceil(w + 2) + "px");
+}
+setTimeCol();
+try { document.fonts.ready.then(setTimeCol); } catch (e) {}
+addEventListener("resize", setTimeCol);
 setKeep();
 try { new ResizeObserver(setKeep).observe($("#bar")); } catch (e) { addEventListener("resize", setKeep); }
 </script>"""
