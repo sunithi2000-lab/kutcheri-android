@@ -26,6 +26,10 @@ PLAN YOUR DAY
 SABHAS
 • Browse 64 sabhas and organisers, see which have published their 2026–27 schedule, and jump to their concerts or website
 
+HELP COMPLETE THE LIST
+• Spotted a concert that's missing? Send it with a link or a photo of the notice
+• Organisers can send their sabha's whole schedule
+
 ALWAYS UP TO DATE, WORKS OFFLINE
 • The list is refreshed every morning from organisers' published schedules and artists' own websites
 • The latest list is saved on your phone, so it works without a connection at the venue
@@ -60,5 +64,8 @@ Schedules can change — please confirm with the organiser before you travel. Th
   - Collected, not shared; processed ephemerally: **No**; required (users can't turn it off): **Yes**; purpose: **Analytics** —
     - Location → **Approximate location** (country/region worked out from the network address)
     - App activity → **App interactions** (screens/tabs opened, concerts starred)
-  - Encrypted in transit → **Yes**. Users can request deletion → **No** (nothing is linked to a person)
+  - Also collected **only when someone sends a form** (optional; purpose: **App functionality**; not shared):
+    - Personal info → **Name**, **Email address**, **Phone number** (organiser contact; optional on the missing-concert form)
+    - Photos and videos → **Photos**; Files and docs → **Files and docs** (notice or schedule attachments)
+  - Encrypted in transit → **Yes**. Users can request deletion → **Yes** (by raising an issue or replying to us; form data is deleted once handled)
 - **Government app:** No · **Financial features:** None · **Health:** None

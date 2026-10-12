@@ -172,6 +172,24 @@ select { font: inherit; font-size: 16px; padding: 10px 12px; border-radius: 10px
 .oa button { appearance: none; border: 0; background: none; color: var(--accent); padding: 0; cursor: pointer; font-weight: 700; text-decoration: underline; }
 .about { margin-top: 22px; padding: 14px; border-radius: 12px; background: var(--surface); border: 1px solid var(--rule); font-size: 13px; color: var(--muted); display: grid; gap: 6px; }
 .about b { color: var(--ink); }
+
+/* contribute: missing concerts and organisers' schedules (Netlify Forms) */
+.contrib { margin: 18px 0 4px; padding: 14px; border-radius: 12px; background: var(--surface); border: 1px dashed color-mix(in srgb, var(--gold) 60%, var(--rule)); display: grid; gap: 8px; font-size: 13.5px; color: var(--muted); }
+.contrib b { color: var(--ink); }
+.contrib .cbtns { display: flex; flex-wrap: wrap; gap: 8px; }
+.cbtn { appearance: none; border: 1px solid var(--accent); background: var(--accent-soft); color: var(--accent); border-radius: 999px; padding: 8px 14px; font-weight: 700; font-size: 14px; cursor: pointer; }
+.frm { display: grid; gap: 12px; }
+.frm label.fl { display: grid; gap: 4px; font-size: 13px; font-weight: 700; color: var(--ink); }
+.frm label.fl small { font-weight: 400; color: var(--muted); }
+.frm input:not([type=file]), .frm textarea { font: inherit; font-size: 16px; padding: 10px 12px; border-radius: 10px; border: 1px solid var(--rule); background: var(--surface); color: var(--ink); width: 100%; }
+.frm input[type=file] { font: inherit; font-size: 14px; color: var(--ink); }
+.frm textarea { min-height: 76px; resize: vertical; }
+.frm .row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.frm .hp { position: absolute; left: -9999px; }
+.frm .fmsg { margin: 0; font-size: 13.5px; }
+.frm .fmsg.err { color: var(--clash); }
+.fdone { text-align: center; padding: 18px 4px; display: grid; gap: 10px; }
+.fdone b { font-size: 17px; }
 </style>
 
 <div class="app">
@@ -201,13 +219,24 @@ select { font: inherit; font-size: 16px; padding: 10px 12px; border-radius: 10px
   </header>
 
   <main>
-    <section id="v-list"><div id="list"></div></section>
+    <section id="v-list"><div id="list"></div>
+      <div class="contrib" data-forms>
+        <span><b>Know a concert that's missing here?</b> Send it with a link or a photo of the sabha's notice. We check every report before adding it.</span>
+        <div class="cbtns"><button type="button" class="cbtn" data-form="missing">Add a missing concert</button></div>
+      </div>
+    </section>
     <section id="v-fav" hidden><div id="fav"></div></section>
-    <section id="v-orgs" hidden><div id="orgs"></div>
+    <section id="v-orgs" hidden>
+      <div class="contrib" data-forms>
+        <span><b>Organising concerts this season?</b> Send your sabha's 2026–27 schedule — a PDF, a photo of the printed programme or a link — and we'll add it.</span>
+        <div class="cbtns"><button type="button" class="cbtn" data-form="organiser">Send your schedule</button><button type="button" class="cbtn" data-form="missing">Add a missing concert</button></div>
+      </div>
+      <div id="orgs"></div>
       <div class="about">
         <span><b>About this list.</b> Collected from organisers' published 2026–27 schedules and from artists' own websites. Updated every morning. Last data: <span id="fetched"></span>.</span>
         <span>Some listings give only the main artist or no end time. Programmes can change, so check the source link before you go.</span>
         <span>Your favourites are saved on this phone or browser only. Visits are counted anonymously with GoatCounter (pages viewed, country/region, device type) — no cookies, no names or contact details.</span>
+        <span>Missing-concert and schedule forms: what you send (and any name or contact you add) goes by email to the site owner, only to check and add the concert.</span>
       </div>
     </section>
   </main>
@@ -221,6 +250,56 @@ select { font: inherit; font-size: 16px; padding: 10px 12px; border-radius: 10px
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 21h18M5 21V10l7-5 7 5v11M9 21v-6h6v6"/></svg>Sabhas</button>
   </nav>
 
+
+  <div class="shade" id="fshade" hidden></div>
+  <div class="sheet" id="fsheet" role="dialog" aria-modal="true" aria-labelledby="fsheet-title" hidden>
+    <div class="grab" aria-hidden="true"></div>
+    <div class="sh"><h2 id="fsheet-title">Add a missing concert</h2><button type="button" class="lnk" id="fclose">Close</button></div>
+
+    <form class="frm" id="f-missing" name="missing-concert" method="POST" data-netlify="true" netlify-honeypot="bot-field" enctype="multipart/form-data" data-title="Add a missing concert">
+      <input type="hidden" name="form-name" value="missing-concert">
+      <input type="hidden" name="subject" value="Kutcheri Planner: missing concert reported (%{submissionId})">
+      <input type="hidden" name="platform" value="">
+      <p class="hp"><label>Leave empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+      <label class="fl">Main artist <input name="artist" required maxlength="120" autocomplete="off"></label>
+      <div class="row2">
+        <label class="fl">Date <input name="date" type="date" required min="2026-11-01" max="2027-01-31"></label>
+        <label class="fl">Start time <input name="start" type="time"></label>
+      </div>
+      <label class="fl">Venue <input name="venue" required maxlength="160"></label>
+      <label class="fl">Sabha or organiser <small>if known</small><input name="organiser" list="org-names" maxlength="120"></label>
+      <label class="fl">Where did you see it? <small>a link, if there is one</small><input name="source_link" type="url" placeholder="https://" maxlength="500"></label>
+      <label class="fl">Photo or PDF of the notice <small>optional, up to 8 MB</small><input name="attachment" type="file" accept="image/*,application/pdf"></label>
+      <label class="fl">Anything else <small>accompanists, ticket details…</small><textarea name="notes" maxlength="1500"></textarea></label>
+      <div class="row2">
+        <label class="fl">Your name <small>optional</small><input name="name" maxlength="80" autocomplete="name"></label>
+        <label class="fl">Email or phone <small>optional, only if we need to ask</small><input name="contact" maxlength="120"></label>
+      </div>
+      <p class="fmsg" aria-live="polite"></p>
+      <button type="submit" class="primary">Send</button>
+    </form>
+
+    <form class="frm" id="f-organiser" name="organiser-schedule" method="POST" data-netlify="true" netlify-honeypot="bot-field" enctype="multipart/form-data" data-title="Send your sabha's schedule" hidden>
+      <input type="hidden" name="form-name" value="organiser-schedule">
+      <input type="hidden" name="subject" value="Kutcheri Planner: organiser schedule received (%{submissionId})">
+      <input type="hidden" name="platform" value="">
+      <p class="hp"><label>Leave empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+      <label class="fl">Sabha or organisation <input name="organisation" list="org-names" required maxlength="120"></label>
+      <label class="fl">Schedule file <small>PDF, photo or spreadsheet, up to 8 MB</small><input name="schedule_file" type="file" accept="image/*,application/pdf,.csv,.xls,.xlsx,.doc,.docx"></label>
+      <label class="fl">…or a link to the schedule <input name="schedule_link" type="url" placeholder="https://" maxlength="500"></label>
+      <label class="fl">Venue(s) and dates <small>optional</small><input name="venues_dates" maxlength="300"></label>
+      <div class="row2">
+        <label class="fl">Contact person <input name="name" required maxlength="80" autocomplete="name"></label>
+        <label class="fl">Email or phone <input name="contact" required maxlength="120"></label>
+      </div>
+      <label class="fl">Message <small>optional</small><textarea name="notes" maxlength="1500"></textarea></label>
+      <p class="fmsg" aria-live="polite"></p>
+      <button type="submit" class="primary">Send schedule</button>
+    </form>
+
+    <div class="fdone" id="fdone" hidden><b>Thank you!</b><span>We'll check it against the source and add it to the list, usually within a day.</span><button type="button" class="primary" id="fdone-ok">Done</button></div>
+    <datalist id="org-names"></datalist>
+  </div>
   <div class="shade" id="shade" hidden></div>
   <div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title" hidden>
     <div class="grab" aria-hidden="true"></div>
@@ -524,5 +603,52 @@ if (GC_ON) {
   sc.dataset.goatcounter = "https://" + GC_CODE + ".goatcounter.com/count";
   document.head.appendChild(sc);
 }
+// ---- contribute: "Add a missing concert" and "Send your schedule" forms (Netlify Forms; reports are emailed to the owner)
+// Shown on the public sites and in the app (which posts to the Netlify site); hidden in previews that cannot post.
+const FORM_URL = "https://kutcheri-dec.netlify.app/";
+const FORMS_ON = IS_APP || ["kutcheri-dec.netlify.app", "sunithi2000-lab.github.io"].includes(location.hostname) || /[?&]forms=1/.test(location.search);
+document.querySelectorAll("[data-forms]").forEach(el => { el.hidden = !FORMS_ON; });
+$("#org-names").innerHTML = ORGS.map(x => `<option value="${esc(x.name)}">`).join("");
+let fLast = null;
+function openForm(kind) {
+  fLast = document.activeElement;
+  const f = kind === "organiser" ? $("#f-organiser") : $("#f-missing");
+  [$("#f-missing"), $("#f-organiser")].forEach(x => { x.hidden = x !== f; });
+  $("#fdone").hidden = true;
+  $("#fsheet-title").textContent = f.dataset.title;
+  f.querySelector(".fmsg").textContent = ""; f.querySelector(".fmsg").className = "fmsg";
+  $("#fsheet").hidden = false; $("#fshade").hidden = false; document.body.style.overflow = "hidden";
+  f.querySelector("input:not([type=hidden]):not([name=bot-field])").focus();
+  track("form_open", { detail: kind });
+}
+function closeForm() { $("#fsheet").hidden = true; $("#fshade").hidden = true; document.body.style.overflow = ""; if (fLast) fLast.focus(); }
+document.addEventListener("click", e => { const b = e.target.closest("[data-form]"); if (b) openForm(b.dataset.form); });
+$("#fclose").addEventListener("click", closeForm);
+$("#fshade").addEventListener("click", closeForm);
+$("#fdone-ok").addEventListener("click", closeForm);
+document.addEventListener("keydown", e => { if (e.key === "Escape" && !$("#fsheet").hidden) closeForm(); });
+[$("#f-missing"), $("#f-organiser")].forEach(f => f.addEventListener("submit", async e => {
+  e.preventDefault();
+  const msg = f.querySelector(".fmsg"), btn = f.querySelector("button[type=submit]");
+  const fail = t => { msg.textContent = t; msg.className = "fmsg err"; };
+  if (f.id === "f-organiser" && !f.schedule_file.files.length && !f.schedule_link.value.trim())
+    return fail("Please attach the schedule or give a link to it.");
+  for (const inp of f.querySelectorAll("input[type=file]"))
+    if (inp.files[0] && inp.files[0].size > 8 * 1024 * 1024) return fail("That file is larger than 8 MB — please send a smaller one or a link.");
+  f.platform.value = IS_APP ? "android-app" : location.hostname;
+  const body = new FormData(f);
+  for (const inp of f.querySelectorAll("input[type=file]")) if (!inp.files.length) body.delete(inp.name);
+  btn.disabled = true; msg.textContent = "Sending…"; msg.className = "fmsg";
+  try {
+    const same = location.origin + "/" === FORM_URL;
+    const r = await fetch(same ? "/" : FORM_URL, { method: "POST", body, mode: same ? "same-origin" : "no-cors" });
+    if (same && !r.ok) throw new Error("status " + r.status);
+    f.reset(); f.hidden = true; $("#fdone").hidden = false; $("#fsheet-title").textContent = "Sent";
+    track("form_sent", { detail: f.name });
+  } catch (err) {
+    fail(navigator.onLine === false ? "You seem to be offline — please try again when connected." : "Sorry, it could not be sent. Please try again in a moment.");
+    window.__reportErr && window.__reportErr("form " + f.name + ": " + (err && err.message || err));
+  } finally { btn.disabled = false; }
+}));
 setView(location.hash === "#plan" || location.hash === "#favourites" ? "fav" : location.hash === "#sabhas" ? "orgs" : "list");
 </script>

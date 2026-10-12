@@ -103,6 +103,35 @@ with sync_playwright() as p:
     pg.evaluate("setTimeout(() => { throw new Error('health-check test error'); })")
     pg.wait_for_timeout(200)
     check(any("health-check test error" in e for e in pg.evaluate("window.__errs || []")), "error reporting did not capture a test error")
+
+    # contribution forms: hidden where they cannot post; with ?forms=1 they open, validate and post to Netlify
+    posts = []
+    def capture(r):
+        if r.request.method == "POST":
+            posts.append(r.request.post_data_buffer or b""); r.fulfill(status=200, body="ok")
+        else:
+            r.abort()
+    ctx = b.new_context(viewport={"width": 360, "height": 740})
+    ctx.route("https://kutcheri-dec.netlify.app/**", capture)
+    ctx.route("**/*", lambda r: r.continue_() if r.request.url.startswith("file:") else r.fallback())
+    pg = ctx.new_page()
+    pg.goto(page_file.as_uri())
+    pg.wait_for_timeout(300)
+    check(pg.locator(".contrib:visible").count() == 0, "contribution buttons show in a local copy that cannot send")
+    pg.goto(page_file.as_uri() + "?forms=1")
+    pg.wait_for_timeout(300)
+    pg.locator('#v-list [data-form="missing"]').click()
+    check(pg.locator("#f-missing").is_visible(), "'Add a missing concert' form does not open")
+    pg.fill("#f-missing [name=artist]", "Health Check Artist"); pg.fill("#f-missing [name=date]", "2026-12-21"); pg.fill("#f-missing [name=venue]", "Test Hall")
+    pg.click("#f-missing button[type=submit]"); pg.wait_for_timeout(400)
+    check(pg.locator("#fdone").is_visible(), "missing-concert form did not show the thank-you message")
+    pg.click("#fdone-ok"); pg.click('.tab[data-v="orgs"]')
+    pg.locator('#v-orgs [data-form="organiser"]').click()
+    pg.fill("#f-organiser [name=organisation]", "Test Sabha"); pg.fill("#f-organiser [name=name]", "Tester"); pg.fill("#f-organiser [name=contact]", "test@example.com")
+    pg.click("#f-organiser button[type=submit]"); pg.wait_for_timeout(200)
+    check("attach" in pg.locator("#f-organiser .fmsg").inner_text(), "organiser form accepted no file and no link")
+    pg.fill("#f-organiser [name=schedule_link]", "https://example.com/s.pdf"); pg.click("#f-organiser button[type=submit]"); pg.wait_for_timeout(400)
+    check(len(posts) == 2 and b"missing-concert" in posts[0] and b"organiser-schedule" in posts[1], f"forms did not post correctly ({len(posts)} posts)")
     b.close()
 
 if problems:
@@ -110,4 +139,4 @@ if problems:
     for x in problems:
         print(" -", x)
     sys.exit(1)
-print(f"page OK: {len(c)} concerts render; search, dates, calendar, My plan, Sabhas, pinned strip, light/dark, large text, error capture")
+print(f"page OK: {len(c)} concerts render; search, dates, calendar, My plan, Sabhas, pinned strip, light/dark, large text, error capture, both forms")
