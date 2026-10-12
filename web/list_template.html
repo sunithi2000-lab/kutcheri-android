@@ -207,7 +207,7 @@ select { font: inherit; font-size: 16px; padding: 10px 12px; border-radius: 10px
       <div class="about">
         <span><b>About this list.</b> Collected from organisers' published 2026–27 schedules and from artists' own websites. Updated every morning. Last data: <span id="fetched"></span>.</span>
         <span>Some listings give only the main artist or no end time. Programmes can change, so check the source link before you go.</span>
-        <span>Your favourites are saved on this phone or browser only.</span>
+        <span>Your favourites are saved on this phone or browser only. Visits are counted with Google Analytics (pages viewed, approximate location, device type); no names or contact details are collected.</span>
       </div>
     </section>
   </main>
@@ -447,7 +447,7 @@ $("#orgs").addEventListener("click", e => { const b = e.target.closest("[data-or
 
 // ---- tabs, favourites, layout
 let view = "list";
-function setView(v) { view = v;
+function setView(v) { if (v !== view) track("tab_view", { tab: v === "fav" ? "My plan" : v === "orgs" ? "Sabhas" : "Concerts" }); view = v;
   document.querySelectorAll(".tab").forEach(t => t.setAttribute("aria-selected", t.dataset.v === v));
   $("#v-list").hidden = v !== "list"; $("#v-fav").hidden = v !== "fav"; $("#v-orgs").hidden = v !== "orgs"; $("#listbar").hidden = v !== "list";
   if (v === "fav") renderFav(); if (v === "orgs") renderOrgs();
@@ -456,7 +456,7 @@ document.querySelectorAll(".tab").forEach(t => t.addEventListener("click", () =>
 const updateFavCount = () => { const n = favs.size; $("#favn").textContent = n || ""; $("#favn").dataset.n = n; };
 document.addEventListener("click", e => {
   const b = e.target.closest(".star"); if (!b) return;
-  const id = b.dataset.id; favs.has(id) ? favs.delete(id) : favs.add(id); store.set("mcl-favs", [...favs]); updateFavCount();
+  const id = b.dataset.id; favs.has(id) ? favs.delete(id) : favs.add(id); store.set("mcl-favs", [...favs]); updateFavCount(); track(favs.has(id) ? "add_to_plan" : "remove_from_plan");
   const c = CONCERTS.find(x => x.id === id), on = favs.has(id);
   document.querySelectorAll(`.star[data-id="${CSS.escape(id)}"]`).forEach(s => { s.setAttribute("aria-pressed", on); s.textContent = on ? "★" : "☆";
     s.setAttribute("aria-label", `${on ? "Remove from" : "Add to"} my plan: ${c.main_artist}, ${fmtS(c.date)}`); });
@@ -489,5 +489,33 @@ window.addEventListener("resize", setTimeCol);
 $("#fetched").textContent = CONCERTS[0] ? fmtD(CONCERTS[0].fetched) : "";
 updateFavCount();
 render();
+// ---- analytics: Google Analytics 4 counts visits, pages/tabs and country/region (no names or contact details).
+// Runs only on the public sites and in the Android app, never in previews or local copies.
+const GA_ID = "";  // Google Analytics measurement ID, e.g. "G-ABC123XYZ"; empty = analytics off
+const IS_APP = !!(window.Capacitor && Capacitor.isNativePlatform && Capacitor.isNativePlatform());
+const GA_ON = !!GA_ID && (IS_APP || ["kutcheri-dec.netlify.app", "sunithi2000-lab.github.io"].includes(location.hostname));
+function track(name, params) { try { if (GA_ON && window.gtag) gtag("event", name, params || {}); } catch (e) {} }
+if (GA_ON) {
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function () { dataLayer.push(arguments); };
+  gtag("js", new Date());
+  gtag("config", GA_ID, IS_APP
+    ? { page_location: "https://kutcheri-dec.netlify.app/app/", page_title: "Kutcheri Planner (Android app)", cookie_domain: "none" }
+    : { page_title: "Kutcheri Planner (website)" });
+  const sc = document.createElement("script");
+  sc.async = true; sc.src = "https://www.googletagmanager.com/gtag/js?id=" + GA_ID;
+  document.head.appendChild(sc);
+  if (!store.get("mk-ga-ok", false)) {
+    const n = document.createElement("div");
+    n.id = "ga-note"; n.setAttribute("role", "status");
+    n.innerHTML = `<span>We count visits with Google Analytics (pages viewed, country, device) to see how the planner is used. No names or contact details.</span><button type="button">OK</button>`;
+    n.style.cssText = "position:fixed;left:50%;transform:translateX(-50%);bottom:calc(var(--tabh) + env(safe-area-inset-bottom, 0px) + 8px);width:min(calc(100% - 24px), calc(var(--app) - 24px));z-index:35;" +
+      "display:flex;gap:10px;align-items:center;padding:10px 12px;border-radius:12px;background:var(--surface);color:var(--ink);border:1px solid var(--rule);box-shadow:0 4px 16px rgba(0,0,0,.18);font-size:13px;line-height:1.35";
+    const ok = n.querySelector("button");
+    ok.style.cssText = "flex:0 0 auto;appearance:none;border:0;border-radius:10px;padding:8px 14px;background:var(--accent);color:var(--accent-ink);font-weight:700;cursor:pointer";
+    ok.onclick = () => { store.set("mk-ga-ok", true); n.remove(); };
+    document.body.appendChild(n);
+  }
+}
 setView(location.hash === "#plan" || location.hash === "#favourites" ? "fav" : location.hash === "#sabhas" ? "orgs" : "list");
 </script>
