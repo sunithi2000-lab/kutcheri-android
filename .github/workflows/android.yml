@@ -100,6 +100,18 @@ jobs:
           mkdir -p ../dist
           cp app/build/outputs/apk/debug/app-debug.apk "../dist/kutcheri-planner-1.0.${VERSION_CODE}-test.apk"
 
+      - name: Check the built app
+        run: |
+          apk=$(ls dist/*.apk | head -1)
+          aapt=$(ls -d "$ANDROID_HOME"/build-tools/*/ | sort -V | tail -1)aapt2
+          badging=$("$aapt" dump badging "$apk" | grep -E "^package:|^targetSdkVersion|^sdkVersion|^application-label:|^application-icon-640" | tr '\n' ' ')
+          files=$(unzip -l "$apk" | awk '{print $4}')
+          for f in assets/public/index.html assets/public/icon.svg assets/capacitor.config.json; do
+            echo "$files" | grep -qx "$f" || { echo "::error::missing $f in APK"; exit 1; }
+          done
+          icons=$(echo "$files" | grep -c "res/mipmap" || true)
+          echo "::notice title=App built::$(basename "$apk") $(du -h "$apk" | cut -f1) | $badging| mipmap files: $icons | $(ls dist | tr '\n' ' ')"
+
       - uses: actions/upload-artifact@v4
         with:
           name: kutcheri-planner-1.0.${{ github.run_number }}
