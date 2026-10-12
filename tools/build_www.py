@@ -9,7 +9,7 @@ App-only changes are applied here, so the website template can be re-copied as-i
   * live data: on start the app downloads the latest list from the website, keeps it for
     offline use, and falls back to the copy shipped inside the app;
   * web links (Google Maps, sabha and artist websites) open in the phone's browser / Maps app;
-  * Android safe-area insets (status bar and gesture bar) come from Capacitor's CSS variables.
+  * (status/navigation bars are handled natively in MainActivity, see scripts/patch_android.py)
 """
 import json
 import re
@@ -91,43 +91,9 @@ t = t.rstrip()[: -len("</script>")] + LIVE_JS.lstrip("\n") + "\n"
 for side in ("top", "bottom"):
     t = t.replace(f"env(safe-area-inset-{side}, 0px)", f"var(--safe-area-inset-{side}, env(safe-area-inset-{side}, 0px))")
 
-# 3. phones with large text: only the date strip stays pinned; title, search and filters scroll away
-APP_CSS = """
-/* app: pin only the bottom of the top bar (the date strip); the rest scrolls away */
-.bar { top: calc(var(--safe-area-inset-top, env(safe-area-inset-top, 0px)) + var(--keep, var(--barh)) - var(--barh)); }
-.dayh { top: calc(var(--safe-area-inset-top, env(safe-area-inset-top, 0px)) + var(--keep, var(--barh))); }
-.app { padding-top: var(--safe-area-inset-top, env(safe-area-inset-top, 0px)); }
-body::before { content: ""; position: fixed; top: 0; left: 0; right: 0; height: var(--safe-area-inset-top, env(safe-area-inset-top, 0px)); background: var(--bg); z-index: 25; }
-"""
-sub("</style>", APP_CSS + "</style>")
-PIN_JS = r"""
-// ---- app: how much of the top bar stays visible when scrolling (the date strip, or all of it on other tabs)
-function setKeep() {
-  const bar = $("#bar"), strip = $("#strip");
-  const keep = strip && strip.offsetParent ? Math.ceil(bar.getBoundingClientRect().bottom - strip.getBoundingClientRect().top) + 4 : bar.offsetHeight;
-  document.documentElement.style.setProperty("--keep", Math.min(keep, bar.offsetHeight) + "px");
-}
-// ---- app: size the time column from the real rendered width of the longest times, so it fits
-// whatever text size the phone uses (Android scales text, not CSS lengths)
-function setTimeCol() {
-  const m = document.createElement("div");
-  m.className = "kt"; m.setAttribute("aria-hidden", "true");
-  m.style.cssText = "position:absolute;visibility:hidden;left:-9999px;top:0;width:auto";
-  m.innerHTML = "<b>12:45 pm</b><small>to 12:45 pm</small>";
-  document.body.appendChild(m);
-  const w = Math.max(...[...m.children].map(e => e.getBoundingClientRect().width));
-  m.remove();
-  if (w > 0) document.documentElement.style.setProperty("--timecol", Math.ceil(w + 2) + "px");
-}
-setTimeCol();
-try { document.fonts.ready.then(setTimeCol); } catch (e) {}
-addEventListener("resize", setTimeCol);
-setKeep();
-try { new ResizeObserver(setKeep).observe($("#bar")); } catch (e) { addEventListener("resize", setKeep); }
-</script>"""
-t = t.rstrip()[: -len("</script>")] + PIN_JS.lstrip("\n") + "\n"
+# (pinned date strip and the measured time column now live in the shared website template)
 
-# 4. embed the offline copy of the data
+# 3. embed the offline copy of the data
 j = lambda d: json.dumps(d, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
 t = t.replace("/*__CONCERTS__*/[]", j(c)).replace("/*__ORGS__*/[]", j(o))
 
