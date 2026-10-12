@@ -41,6 +41,55 @@ x2, n5 = re.subn(r'android:configChanges="([^"]*)"', lambda mo: mo.group(0) if "
 assert n5 == 1, "configChanges not found in AndroidManifest.xml"
 m.write_text(x2)
 
+# Keep the web page clear of the status bar and navigation bar: Android pads the app's content
+# view by the system-bar insets, so the page never has to work out where the bars are.
+pkg = re.search(r'applicationId\s+"([^"]+)"', s).group(1)
+act = A / "app/src/main/java" / Path(*pkg.split(".")) / "MainActivity.java"
+assert act.exists(), f"{act} not found"
+act.write_text(f"""package {pkg};
+
+import android.content.res.Configuration;
+import android.graphics.Color;
+import android.os.Bundle;
+import android.view.View;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowCompat;
+import androidx.core.view.WindowInsetsCompat;
+import androidx.core.view.WindowInsetsControllerCompat;
+import com.getcapacitor.BridgeActivity;
+
+public class MainActivity extends BridgeActivity {{
+    @Override
+    public void onCreate(Bundle savedInstanceState) {{
+        super.onCreate(savedInstanceState);
+        applySystemBars();
+        View content = findViewById(android.R.id.content);
+        ViewCompat.setOnApplyWindowInsetsListener(content, (v, insets) -> {{
+            Insets bars = insets.getInsets(WindowInsetsCompat.Type.systemBars() | WindowInsetsCompat.Type.displayCutout() | WindowInsetsCompat.Type.ime());
+            v.setPadding(bars.left, bars.top, bars.right, bars.bottom);
+            return WindowInsetsCompat.CONSUMED;
+        }});
+        ViewCompat.requestApplyInsets(content);
+    }}
+
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {{
+        super.onConfigurationChanged(newConfig);
+        applySystemBars();
+    }}
+
+    // Status/navigation bar areas use the page's own background colour (light or dark theme).
+    private void applySystemBars() {{
+        boolean night = (getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK) == Configuration.UI_MODE_NIGHT_YES;
+        getWindow().getDecorView().setBackgroundColor(Color.parseColor(night ? "#0F1513" : "#F6F7F3"));
+        WindowInsetsControllerCompat c = WindowCompat.getInsetsController(getWindow(), getWindow().getDecorView());
+        c.setAppearanceLightStatusBars(!night);
+        c.setAppearanceLightNavigationBars(!night);
+    }}
+}}
+""")
+
 v = (A / "variables.gradle").read_text()
 sdk = dict(re.findall(r"(\w+SdkVersion)\s*=\s*(\d+)", v))
 print("android patched: versionCode", code, "| sdk", sdk)

@@ -70,7 +70,7 @@ jobs:
       - name: Create Android project
         run: |
           $RUN "cap add android" npx cap add android
-          $RUN "icons" npx capacitor-assets generate --android --iconBackgroundColor '#0E6A57' --iconBackgroundColorDark '#0E6A57' --splashBackgroundColor '#0E6A57' --splashBackgroundColorDark '#0E6A57'
+          $RUN "icons" npx capacitor-assets generate --android --iconBackgroundColor '#F39C1E' --iconBackgroundColorDark '#F39C1E' --splashBackgroundColor '#F39C1E' --splashBackgroundColorDark '#F39C1E'
           $RUN "patch android" python3 scripts/patch_android.py
           $RUN "cap sync" npx cap sync android
 

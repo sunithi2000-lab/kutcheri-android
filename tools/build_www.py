@@ -122,7 +122,7 @@ doc = f"""<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#0E6A57">
+<meta name="theme-color" content="#F39C1E">
 <meta name="format-detection" content="telephone=no">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
 {head}</style>
@@ -135,6 +135,6 @@ doc = f"""<!doctype html>
 www = R / "www"
 www.mkdir(exist_ok=True)
 (www / "index.html").write_text(doc)
-(www / "icon.svg").write_text((R / "web/icon.svg").read_text())
+(www / "icon.svg").write_text((R / "resources/app-icon.svg").read_text())
 (R / "tools/_check.js").write_text(re.search(r"<script>(.*)</script>", doc, re.S).group(1))
 print(f"www/index.html: {len(c)} concerts, {len(o)} organisations, build {build}")
