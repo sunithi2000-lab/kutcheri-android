@@ -91,7 +91,28 @@ t = t.rstrip()[: -len("</script>")] + LIVE_JS.lstrip("\n") + "\n"
 for side in ("top", "bottom"):
     t = t.replace(f"env(safe-area-inset-{side}, 0px)", f"var(--safe-area-inset-{side}, env(safe-area-inset-{side}, 0px))")
 
-# 3. embed the offline copy of the data
+# 3. phones with large text: only the date strip stays pinned; title, search and filters scroll away
+APP_CSS = """
+/* app: pin only the bottom of the top bar (the date strip); the rest scrolls away */
+.bar { top: calc(var(--safe-area-inset-top, env(safe-area-inset-top, 0px)) + var(--keep, var(--barh)) - var(--barh)); }
+.dayh { top: calc(var(--safe-area-inset-top, env(safe-area-inset-top, 0px)) + var(--keep, var(--barh))); }
+.app { padding-top: var(--safe-area-inset-top, env(safe-area-inset-top, 0px)); }
+body::before { content: ""; position: fixed; top: 0; left: 0; right: 0; height: var(--safe-area-inset-top, env(safe-area-inset-top, 0px)); background: var(--bg); z-index: 25; }
+"""
+sub("</style>", APP_CSS + "</style>")
+PIN_JS = r"""
+// ---- app: how much of the top bar stays visible when scrolling (the date strip, or all of it on other tabs)
+function setKeep() {
+  const bar = $("#bar"), strip = $("#strip");
+  const keep = strip && strip.offsetParent ? Math.ceil(bar.getBoundingClientRect().bottom - strip.getBoundingClientRect().top) + 4 : bar.offsetHeight;
+  document.documentElement.style.setProperty("--keep", Math.min(keep, bar.offsetHeight) + "px");
+}
+setKeep();
+try { new ResizeObserver(setKeep).observe($("#bar")); } catch (e) { addEventListener("resize", setKeep); }
+</script>"""
+t = t.rstrip()[: -len("</script>")] + PIN_JS.lstrip("\n") + "\n"
+
+# 4. embed the offline copy of the data
 j = lambda d: json.dumps(d, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
 t = t.replace("/*__CONCERTS__*/[]", j(c)).replace("/*__ORGS__*/[]", j(o))
 
