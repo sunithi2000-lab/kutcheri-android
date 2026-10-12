@@ -30,7 +30,7 @@ ALWAYS UP TO DATE, WORKS OFFLINE
 • The list is refreshed every morning from organisers' published schedules and artists' own websites
 • The latest list is saved on your phone, so it works without a connection at the venue
 
-No sign-in and no ads. Your plan stays on your phone; anonymous usage statistics (Google Analytics) help us see how the planner is used.
+No sign-in and no ads. Your plan stays on your phone; anonymous visit counts (no cookies) help us see how the planner is used.
 
 Schedules can change — please confirm with the organiser before you travel. This app is an independent listing and is not affiliated with any sabha or artist.
 ```
@@ -55,11 +55,10 @@ Schedules can change — please confirm with the organiser before you travel. Th
 - **Content rating questionnaire:** category "Reference, News, or Educational"; answer No to violence, sexual content, language, controlled substances, gambling; no user interaction or sharing of user content; no location sharing → expected rating: Everyone / PEGI 3
 - **Target audience:** 18 and over (simplest; avoids the Families policy requirements) — or 13+ if you prefer
 - **News app:** No
-- **Data safety** (app uses Google Analytics):
+- **Data safety** (app counts anonymous usage with GoatCounter — no cookies, no identifiers):
   - "Does your app collect or share any of the required user data types?" → **Yes**
-  - Collected (not shared — Google is a service provider), processed ephemerally: **No**, required (users can't turn it off): **Yes**, purpose: **Analytics** —
-    - Location → **Approximate location**
-    - App activity → **App interactions**
-    - Device or other IDs → **Device or other IDs**
-  - Encrypted in transit → **Yes**. Users can request deletion → **No** (no accounts; data is anonymous)
+  - Collected, not shared; processed ephemerally: **No**; required (users can't turn it off): **Yes**; purpose: **Analytics** —
+    - Location → **Approximate location** (country/region worked out from the network address)
+    - App activity → **App interactions** (screens/tabs opened, concerts starred)
+  - Encrypted in transit → **Yes**. Users can request deletion → **No** (nothing is linked to a person)
 - **Government app:** No · **Financial features:** None · **Health:** None
