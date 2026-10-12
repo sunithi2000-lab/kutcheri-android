@@ -22,18 +22,34 @@ jobs:
       VERSION_CODE: ${{ github.run_number }}
       HAS_KEY: ${{ secrets.KEYSTORE_PASSWORD != '' && 'yes' || 'no' }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with:
           node-version: 22
 
-      - uses: actions/setup-java@v4
+      - uses: actions/setup-java@v5
         with:
           distribution: temurin
           java-version: 21
 
-      - uses: android-actions/setup-android@v3
+      - name: Prepare error reporting
+        run: |
+          cat > "$RUNNER_TEMP/run.sh" <<'SH'
+          #!/usr/bin/env bash
+          # run.sh <label> <command...>: run, keep a log, and on failure show the last lines as an annotation
+          label="$1"; shift
+          set -o pipefail
+          "$@" 2>&1 | tee "$RUNNER_TEMP/step.log"; rc=${PIPESTATUS[0]}
+          if [ $rc -ne 0 ]; then
+            msg=$( (grep -iE "error|failed|what went wrong|exception|cannot|could not" "$RUNNER_TEMP/step.log" | grep -v "^\s*at " | tail -12; echo ---; tail -8 "$RUNNER_TEMP/step.log") | cut -c1-300 | sed ':a;N;$!ba;s/%/%25/g;s/\r//g;s/\n/%0A/g')
+            echo "::error title=$label failed::$msg"
+          fi
+          exit $rc
+          SH
+          chmod +x "$RUNNER_TEMP/run.sh"
+          echo "RUN=$RUNNER_TEMP/run.sh" >> "$GITHUB_ENV"
+          echo "ANDROID_HOME=$ANDROID_HOME"; ls "$ANDROID_HOME/platforms" "$ANDROID_HOME/build-tools" | tail -6
 
       - name: Refresh the offline copy of the concert list from the website
         run: |
@@ -46,17 +62,17 @@ jobs:
           true
 
       - name: Build app page
-        run: python3 tools/build_www.py && node --check tools/_check.js
+        run: $RUN "Build app page" bash -c 'python3 tools/build_www.py && node --check tools/_check.js'
 
       - name: Install Capacitor
-        run: npm install --no-audit --no-fund
+        run: $RUN "npm install" npm install --no-audit --no-fund
 
       - name: Create Android project
         run: |
-          npx cap add android
-          npx capacitor-assets generate --android --iconBackgroundColor '#0E6A57' --iconBackgroundColorDark '#0E6A57' --splashBackgroundColor '#0E6A57' --splashBackgroundColorDark '#0E6A57'
-          python3 scripts/patch_android.py
-          npx cap sync android
+          $RUN "cap add android" npx cap add android
+          $RUN "icons" npx capacitor-assets generate --android --iconBackgroundColor '#0E6A57' --iconBackgroundColorDark '#0E6A57' --splashBackgroundColor '#0E6A57' --splashBackgroundColorDark '#0E6A57'
+          $RUN "patch android" python3 scripts/patch_android.py
+          $RUN "cap sync" npx cap sync android
 
       - name: Build signed bundle and APK
         if: env.HAS_KEY == 'yes'
@@ -68,7 +84,7 @@ jobs:
           KEY_ALIAS: upload
         run: |
           chmod +x gradlew
-          ./gradlew --no-daemon bundleRelease assembleRelease
+          $RUN "gradle release build" ./gradlew --no-daemon bundleRelease assembleRelease
           mkdir -p ../dist
           cp app/build/outputs/bundle/release/app-release.aab "../dist/kutcheri-planner-1.0.${VERSION_CODE}.aab"
           cp app/build/outputs/apk/release/app-release.apk "../dist/kutcheri-planner-1.0.${VERSION_CODE}.apk"
@@ -80,7 +96,7 @@ jobs:
         run: |
           echo "::warning::Repository secret KEYSTORE_PASSWORD is not set, so only a debug test APK was built (not uploadable to Google Play)."
           chmod +x gradlew
-          ./gradlew --no-daemon assembleDebug
+          $RUN "gradle debug build" ./gradlew --no-daemon assembleDebug
           mkdir -p ../dist
           cp app/build/outputs/apk/debug/app-debug.apk "../dist/kutcheri-planner-1.0.${VERSION_CODE}-test.apk"
 
