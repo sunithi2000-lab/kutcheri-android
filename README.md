@@ -6,7 +6,7 @@ Built with [Capacitor 8](https://capacitorjs.com): the app shows the same planne
 
 ## How the concert list stays current
 - Each app build ships an offline copy of `data/concerts.json` and `data/organisations.json` (refreshed from the website at build time).
-- When the phone is online, the app downloads the latest list from the website (fallback: GitHub) and keeps it for offline use. If the list changed before the user has touched the screen, the app reloads quietly; otherwise it shows a "Tap to refresh" bar. So the website's daily update reaches the app without a new release.
+- **Live updates are switched off (26 Nov 2026, owner's request; project on hold).** The app shows only the list bundled at build time and ignores any list it downloaded earlier. To turn them back on, restore the live-update block in `tools/build_www.py` from the commit before "App: switch off live concert-list updates".
 - Favourites ("My plan") and filters are stored on the phone only.
 
 ## Building

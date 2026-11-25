@@ -36,45 +36,13 @@ def sub(old, new, count=1):
 build = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 sub("const CONCERTS = /*__CONCERTS__*/[];\nconst ORGS = /*__ORGS__*/[];", f"""const APP_BUILD = "{build}";
 const BUNDLED_C = /*__CONCERTS__*/[], BUNDLED_O = /*__ORGS__*/[];
-const LIVE = (() => {{ try {{ const v = JSON.parse(localStorage.getItem("mk-live"));
-  return v && v.at > APP_BUILD && Array.isArray(v.c) && v.c.length && Array.isArray(v.o) ? v : null; }} catch (e) {{ return null; }} }})();
+const LIVE = null; // live updates off: ignore any saved downloaded list
 const CONCERTS = LIVE ? LIVE.c : BUNDLED_C;
 const ORGS = LIVE ? LIVE.o : BUNDLED_O;
 const DATA_SIG = JSON.stringify(CONCERTS) + JSON.stringify(ORGS);""")
 
 LIVE_JS = r"""
-// ---- app: fetch the latest list from the website; keep it for offline use
-(() => {
-  let touched = false;
-  ["pointerdown", "keydown"].forEach(ev => addEventListener(ev, () => { touched = true; }, { once: true, capture: true }));
-  const SOURCES = ["https://kutcheri-dec.netlify.app/", "https://raw.githubusercontent.com/sunithi2000-lab/kutcheri/main/"];
-  const get = url => fetch(url + "?t=" + Date.now(), { cache: "no-store" }).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); });
-  const banner = () => {
-    if (document.getElementById("app-upd")) return;
-    const b = document.createElement("button");
-    b.id = "app-upd"; b.type = "button"; b.textContent = "Updated concert list available · Tap to refresh";
-    b.style.cssText = "position:fixed;left:12px;right:12px;bottom:calc(76px + var(--safe-area-inset-bottom, 0px));z-index:60;" +
-      "padding:12px 14px;border:0;border-radius:12px;background:#0E6A57;color:#fff;font:600 14px/1.3 system-ui,sans-serif;box-shadow:0 4px 16px rgba(0,0,0,.25)";
-    b.onclick = () => location.reload();
-    document.body.appendChild(b);
-  };
-  (async () => {
-    for (const base of SOURCES) {
-      try {
-        const [c, o] = await Promise.all([get(base + "data/concerts.json"), get(base + "data/organisations.json")]);
-        if (!Array.isArray(c) || !c.length || !Array.isArray(o) || !o.length) throw new Error("bad data");
-        const at = new Date().toISOString();
-        if (JSON.stringify(c) + JSON.stringify(o) === DATA_SIG) {
-          if (LIVE) store.set("mk-live", { at, c, o });
-          return;
-        }
-        store.set("mk-live", { at, c, o });
-        touched ? banner() : location.reload();
-        return;
-      } catch (e) { /* offline or source down: try the next one, else keep the saved copy */ }
-    }
-  })();
-})();
+// ---- app: live updates switched off 26 Nov 2026 (owner's request); the app shows only the list bundled at build time
 
 // ---- app: open web links (Maps, sabha and artist sites) outside the app
 document.addEventListener("click", e => {
